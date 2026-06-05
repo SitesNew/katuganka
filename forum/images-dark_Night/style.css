@@ -1,0 +1,201 @@
+/*  Created by s@work design   http://cs-info.rikt.ru */
+
+body { color : #FFF;
+    background-color: #222;
+    scrollbar-face-color: #393939;
+    scrollbar-highlight-color: #222;
+    scrollbar-shadow-color: #393939;
+    scrollbar-3dlight-color: #313131;
+    scrollbar-arrow-color:  #777;
+    scrollbar-track-color: #393939;
+    scrollbar-darkshadow-color: #191919;
+}
+
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif }
+a:link,a:active,a:visited { color : #777; }
+a:hover        { text-decoration: underline; color : #999; }
+hr    { height: 0px; border: solid #313131 0px; border-top-width: 1px;}
+
+.bodyline    { background-color: #222; border: 1px #191919 solid; }
+.forumline    { background-color: #222; border: 2px #191919 solid; }
+
+td.row1    { background-color: #393939; }
+td.row2    { background-color: #393939; }
+td.row3    { background-color: #313131; }
+
+td.rowpic {
+        background-color: #222;
+        background-image: url(cellpic2.jpg);
+        background-repeat: repeat-y;
+}
+
+th    {
+    color: #FFF; font-size: 13px; font-weight : bold;
+    background-color: #777; height: 25px;
+    background-image: url(cellpic3.gif);
+}
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {
+            background-image: url(cellpic1.gif);
+            background-color:#313131; border: #191919; border-style: solid; height: 28px;
+}
+
+td.cat,td.catHead,td.catBottom {
+    height: 29px;
+    border-width: 0px 0px 0px 0px;
+}
+th.thHead,th.thSides,th.thTop,th.thLeft,th.thRight,th.thBottom,th.thCornerL,th.thCornerR {
+    font-weight: bold; border: #222; border-style: solid; height: 28px;
+}
+td.row3Right,td.spaceRow {
+    background-color: #313131; border: #191919; border-style: solid;
+}
+
+th.thHead,td.catHead { font-size: 14px; border-width: 1px 1px 0px 1px; }
+th.thSides,td.catSides,td.spaceRow     { border-width: 0px 1px 0px 1px; }
+th.thRight,td.catRight,td.row3Right     { border-width: 0px 1px 0px 0px; }
+th.thLeft,td.catLeft      { border-width: 0px 0px 0px 1px; }
+th.thBottom,td.catBottom  { border-width: 0px 1px 1px 1px; }
+th.thTop     { border-width: 1px 0px 0px 0px; }
+th.thCornerL { border-width: 1px 0px 0px 1px; }
+th.thCornerR { border-width: 1px 1px 0px 0px; }
+
+.maintitle    {
+    font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+    text-decoration: none; line-height : 120%; color : #757575;
+}
+
+.gen { font-size : 14px; }
+.genmed { font-size : 13px; }
+.gensmall { font-size : 12px; }
+.gen,.genmed,.gensmall { color : #757575; }
+a.gen,a.genmed,a.gensmall { color: #777; text-decoration: none; }
+a.gen:hover,a.genmed:hover,a.gensmall:hover    { color: #999; text-decoration: underline; }
+
+.mainmenu        { font-size : 12px; color : #757575 }
+a.mainmenu        { text-decoration: none; color : #777;  }
+a.mainmenu:hover{ text-decoration: underline; color : #999; }
+
+.cattitle        { font-weight: bold; font-size: 12px ; center-spacing: 1px; color : #fff}
+a.cattitle        { text-decoration: none; color : #fff; }
+a.cattitle:hover{ text-decoration: underline; }
+
+.forumlink        { font-weight: bold; font-size: 13px; color : #777; }
+a.forumlink     { text-decoration: none; color : #777; }
+a.forumlink:hover{ text-decoration: underline; color : #999; }
+
+.nav            { font-weight: bold; font-size: 13px; color : #757575;}
+a.nav            { text-decoration: none; color : #777; }
+a.nav:hover        { text-decoration: underline; }
+
+.topictitle,h1,h2    { font-weight: bold; font-size: 13px; color : #757575; }
+a.topictitle:link   { text-decoration: none; color : #777; }
+a.topictitle:visited { text-decoration: none; color : #666; }
+a.topictitle:hover    { text-decoration: underline; color : #999; }
+
+.name            { font-size : 13px; color : #757575;}
+.postdetails        { font-size : 13px; color : #757575; }
+
+.postbody { font-size : 14px; line-height: 18px}
+a.postlink:link    { text-decoration: none; color : #777 }
+a.postlink:visited { text-decoration: none; color : #666; }
+a.postlink:hover { text-decoration: underline; color : #999}
+
+.code {
+    font-family: Courier, 'Courier New', sans-serif; font-size: 13px; color: #999;
+    background-color: #FFF; border: #313131; border-style: solid;
+    border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.quote {
+    font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #757575; line-height: 125%;
+    background-color: #FFF; border: #313131; border-style: solid;
+    border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px
+}
+
+.copyright        { font-size: 12px; font-family: Verdana, Arial, Helvetica, sans-serif; color: #757575; letter-spacing: -1px;}
+a.copyright        { color: #757575; text-decoration: none;}
+a.copyright:hover { color: #757575; text-decoration: underline;}
+
+
+form { display: inline; margin: 2px; padding: 0px; border: 0px;}
+input,textarea, select {
+    color : #757575;
+    font: normal 13px Verdana, Arial, Helvetica, sans-serif;
+    border-color : #757575;
+}
+
+input.post, textarea.post, select {
+    background-color : #222;
+}
+
+input { text-indent : 2px; }
+
+input.button {
+    background-color : #393939;
+    color : #757575;
+    font-size: 13px; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+input.mainoption {
+    background-color : #FFF;
+    font-weight : bold;
+}
+
+input.liteoption {
+    background-color : #FFF;
+    font-weight : normal;
+}
+
+.helpline { background-color: #393939; border-style: none; }
+
+
+
+
+
+/* СТИЛИ для скрипта форума WR-Forum Professional версии 2.2 с 2019 года */
+
+/* 1) ИЗМЕНЕНИЕ ИМЕЮЩЕГОСЯ СТИЛЯ */
+/* Здесь ниже задаётся стиль для ссылок - все ссылки в квадратиках обведённых нежным оттенком основного цвета */
+.pgbutt a {font-family: Verdana; padding-top:2px;padding-bottom:2px;
+text-decoration: none; border: 1px #FFFFFF solid; background: #242424; padding:1px 4px 1px 4px; margin: 5px 1 0 0;
+ -moz-border-radius: 4px;
+ -khtml-border-radius: 4px;
+ -webkit-border-radius: 4px;
+ border-radius: 4px;}
+
+TD {font-size: 14px;}
+
+/* 2) QR-CODE */
+#qr img{width:35px;height:35px;position: fixed;right: 10px;top: 10px;border: 1px solid #666;padding: 1px;background-color: white;}
+#qr img:hover{width:200px;height:200px;z-index:100;padding: 2px;}
+
+/* 3) Если нет аватара добавляем ЧУДО КВАДРАТ с первой буквой логина. border-radius 100% - это круг */
+.guestavatar{width:120px;height:120px;text-align:center;background: #FFDEAD;color: #4E5754;font-size: 50px;
+display: table-cell;border-radius: 20%;position: relative;vertical-align: middle;}
+
+/* 4) навигационное МЕНЮ В АДМИНКЕ */
+#nav8, #nav8 ul, #nav8 li {margin: 0;padding: 0;border: 0;}
+#nav8, #nav8 ul {background: #222;}
+#nav8 {border-spacing: 0 0;position: relative;z-index: 50;width: 100%;}
+#nav8 ul {position: absolute;display: none;}
+#nav8 td:hover ul {display: block;}
+#nav8 ul li {list-style: none;}
+#nav8 .right {direction: rtl;}
+#nav8 .right ul {right: 0;}
+#nav8 .right li {direction: ltr;}
+#nav8 a {display: block;padding: 7px 0;text-align: center;text-decoration: none;}
+#nav8 ul a {padding: 7px 15px;text-align: left;}
+#nav8 td:hover, #nav8 li:hover {background: #414141;}
+#nav8 td {text-align: center;}
+
+/* 5) Стиль для блока загрузки - ДАЛЕЕ >>> */
+#cssbar-wrapper {width:300px; height:19px; position:absolute; left:50%;}
+#cssbar-border {border:3px solid rgb(162,162,162); height:100%; width:100%; position:relative; left:-50%; top:-50%; padding:4px 3px;}
+#cssbar-whitespace {overflow:hidden; height:100%; width:100%; margin:0 auto; overflow:hidden; position:relative;}
+#cssbar-line {background-color:rgb(170,170,170); position:absolute; height:100%; width:100%; animation:cssbar-slide 4s steps(40) infinite;
+ -o-animation:cssbar-slide 4s steps(40) infinite; -ms-animation:cssbar-slide 4s steps(40) infinite;
+ -webkit-animation:cssbar-slide 4s steps(40) infinite; -moz-animation:cssbar-slide 4s steps(40) infinite;}
+@keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-o-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-ms-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-webkit-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-moz-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}

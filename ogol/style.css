@@ -1,0 +1,10 @@
+.copy 
+  {
+	display: block;
+	width: 100px;
+	height: 100px;
+	left: 10px;
+	top: 80%;
+	position: absolute;
+	z-index: 2;
+  }

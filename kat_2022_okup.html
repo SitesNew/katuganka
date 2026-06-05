@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <title>Катюжанка 2022 — Окупація та Звільнення. Громадський сайт села Катюжанка.</title>
+   <meta name="description" content="Катюжанка у 2022 році. 37 днів окупації. Звільнення села від російських загарбників. Пам'ять про захисників. Громадський сайт села Катюжанка, Вишгородський район, Київська область.">
+   <meta name="keywords" content="Катюжанка 2022, окупація, звільнення, російське вторгнення, Катюжанка Київська область, захисники України">
+   <meta name="robots" content="index,follow">
+   <meta name="author" content="Валентин Приходько">
+
+   <!-- Open Graph для соцмереж -->
+   <meta property="og:title" content="Катюжанка 2022 — Окупація та Звільнення">
+   <meta property="og:description" content="37 днів окупації. Пам'ять про захисників. Катюжанка, Київська область.">
+   <meta property="og:type" content="article">
+   <meta property="og:url" content="index.htmlkat_2022.html">
+   <link href='./images/favicon.ico' rel='icon' type='image/x-icon'/>
+
+   <!-- Підключаємо ті самі CSS що й на головній сторінці -->
+   <link rel="stylesheet" href="css_n/zerogrid.css">
+   <link rel="stylesheet" href="css_n/style.css">
+   <link rel="stylesheet" href="css_n/component.css">
+   <link rel="stylesheet" href="css_n/responsive.css">
+
+   <style>
+      /* ===== Загальний контейнер сторінки ===== */
+      .page-2022 {
+         max-width: 860px;
+         margin: 0 auto;
+         padding: 10px 20px 30px 20px;
+         font-size: 15px;
+         color: #000000;
+         line-height: 1.7;
+      }
+
+      /* ===== Заголовок сторінки ===== */
+      .title-block {
+         text-align: center;
+         border: 2px solid #8B0000;
+         background-color: #fff8f8;
+         padding: 18px 20px 14px 20px;
+         margin-bottom: 24px;
+      }
+      .title-block h1 {
+         font-size: 20px;
+         font-weight: bold;
+         color: #8B0000;
+         margin: 0 0 6px 0;
+      }
+      .title-block .subtitle {
+         font-size: 14px;
+         color: #555;
+         font-style: italic;
+      }
+
+      /* ===== Блок-попередження (хронологія) ===== */
+      .timeline {
+         border: 1px solid #8B0000;
+         background: #fff8f8;
+         padding: 14px 18px;
+         margin-bottom: 22px;
+      }
+      .timeline h2 {
+         font-size: 16px;
+         font-weight: bold;
+         color: #8B0000;
+         border-bottom: 1px solid #ccc;
+         padding-bottom: 6px;
+         margin-bottom: 12px;
+      }
+      .timeline-row {
+         display: flex;
+         gap: 14px;
+         margin-bottom: 10px;
+         align-items: flex-start;
+      }
+      .timeline-date {
+         min-width: 100px;
+         font-weight: bold;
+         color: #8B0000;
+         font-size: 14px;
+         padding-top: 1px;
+      }
+      .timeline-text {
+         font-size: 14px;
+         color: #222;
+         line-height: 1.6;
+      }
+
+      /* ===== Текстові блоки ===== */
+      .section-block {
+         border: 1px double #006400;
+         background-color: #FFFFE0;
+         padding: 16px 20px;
+         margin-bottom: 22px;
+      }
+      .section-block h2 {
+         font-size: 16px;
+         font-weight: bold;
+         color: #006400;
+         border-bottom: 1px solid #aaa;
+         padding-bottom: 6px;
+         margin-bottom: 12px;
+         text-align: center;
+      }
+      .section-block p {
+         margin: 0 0 10px 0;
+         text-align: justify;
+      }
+      .section-block p:last-child {
+         margin-bottom: 0;
+      }
+
+      /* ===== Блок пам'яті (темний) ===== */
+      .memory-block {
+         border: 2px solid #8B0000;
+         background-color: #1a1a1a;
+         color: #f0f0f0;
+         padding: 20px;
+         margin-bottom: 22px;
+         text-align: center;
+      }
+      .memory-block h2 {
+         font-size: 18px;
+         color: #ff6b6b;
+         margin-bottom: 16px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+      }
+      .defender-card {
+         display: inline-block;
+         background: #2a2a2a;
+         border: 1px solid #8B0000;
+         padding: 12px 20px;
+         margin: 8px;
+         min-width: 200px;
+         vertical-align: top;
+      }
+      .defender-card .def-name {
+         font-size: 15px;
+         font-weight: bold;
+         color: #ffd700;
+         margin-bottom: 4px;
+      }
+      .defender-card .def-years {
+         font-size: 13px;
+         color: #ccc;
+         margin-bottom: 4px;
+      }
+      .defender-card .def-note {
+         font-size: 12px;
+         color: #aaa;
+         font-style: italic;
+      }
+      .eternal-memory {
+         color: #ffd700;
+         font-size: 16px;
+         font-weight: bold;
+         margin-top: 16px;
+         letter-spacing: 1px;
+      }
+
+      /* ===== Блок цитати ===== */
+      .quote-block {
+         border-left: 4px solid #8B0000;
+         background: #f9f9f9;
+         padding: 12px 16px;
+         margin: 14px 0;
+         font-style: italic;
+         color: #333;
+         font-size: 14px;
+      }
+      .quote-block .quote-source {
+         font-style: normal;
+         font-size: 12px;
+         color: #666;
+         margin-top: 6px;
+      }
+
+      /* ===== Блок «Слава Україні» ===== */
+      .glory-block {
+         text-align: center;
+         padding: 16px;
+         border: 1px solid #0057b7;
+         background: linear-gradient(180deg, #0057b7 50%, #ffd700 50%);
+         margin-bottom: 22px;
+      }
+      .glory-block .glory-text {
+         font-size: 18px;
+         font-weight: bold;
+         color: #fff;
+         text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+         line-height: 2;
+      }
+
+      /* ===== Посилання ===== */
+      .links-block {
+         border: 1px solid #006400;
+         background: #f0fff0;
+         padding: 14px 18px;
+         margin-bottom: 22px;
+      }
+      .links-block h2 {
+         font-size: 15px;
+         font-weight: bold;
+         color: #006400;
+         margin-bottom: 10px;
+      }
+      .links-block a {
+         display: block;
+         color: #006400;
+         font-size: 14px;
+         margin-bottom: 6px;
+         text-decoration: underline;
+      }
+      .links-block a:hover {
+         color: #8B0000;
+      }
+
+      /* ===== Кнопка «Назад» ===== */
+      .back-link {
+         display: inline-block;
+         color: #006400;
+         font-size: 14px;
+         text-decoration: underline;
+         margin-bottom: 16px;
+      }
+      .back-link:hover { color: #8B0000; }
+
+      /* ===== Адаптивність ===== */
+      @media (max-width: 600px) {
+         .timeline-row { flex-direction: column; gap: 4px; }
+         .timeline-date { min-width: auto; }
+         .defender-card { display: block; margin: 8px 0; min-width: auto; }
+         .page-2022 { padding: 8px 12px 20px 12px; }
+         .title-block h1 { font-size: 17px; }
+      }
+   </style>
+</head>
+
+<body>
+<div class="wrap-body">
+
+   <!-- ======== Шапка — та сама що на головній ======== -->
+   <div align="right" style="font-size:15px; color:#000000;">
+      <script>
+         var now = new Date();
+         var days = [' Неділя ',' Понеділок ',' Вівторок ',' Середа ',' Четвер ',' П\'ятниця ',' Субота '];
+         var months = [' Січня ',' Лютого ',' Березня ',' Квітня ',' Травня ',' Червня ',' Липня ',' Серпня ',' Вересня',' Жовтня ',' Листопада ',' Грудня '];
+         var date = ((now.getDate()<10) ? "0" : "") + now.getDate();
+         var today = days[now.getDay()] + date + months[now.getMonth()] + now.getFullYear() + " Року.&nbsp;&nbsp;&nbsp;";
+         document.write('<span style="font-size:14px;">Поточна дата : ' + today + '</span>');
+      </script>
+   </div>
+
+   <div align="center">
+      <a href="index.html" style="text-decoration:none;">
+         <h1 style="font-weight:normal; font-size:18px; color:#000000;">
+            Громадський сайт , село Катюжанка , Вишгородський район , Київська область ,<br>
+            Україна , 07313 , Інтернет-довідник.
+         </h1>
+      </a>
+   </div>
+
+   <!-- Навігаційне меню — підключити те саме що на головній -->
+   <!-- (скопіюйте блок <div class="top-header">...</div> з index.html) -->
+
+   <!-- ======== ОСНОВНИЙ ЗМІСТ ======== -->
+   <div class="page-2022">
+
+      <a href="index.html" class="back-link">← На головну сторінку</a>
+
+      <!-- Заголовок -->
+      <div class="title-block">
+         <h1>🇺🇦 КАТЮЖАНКА У 2022 РОЦІ</h1>
+         <div class="subtitle">
+            Окупація. Спротив. Звільнення. Пам'ять.<br>
+            37 днів під загарбниками — і повернення волі.
+         </div>
+      </div>
+
+      <!-- Блок «Слава Україні» -->
+      <div class="glory-block">
+         <div class="glory-text">
+            Слава Україні ! &nbsp;&nbsp;&nbsp; Героям Слава !
+         </div>
+      </div>
+
+      <!-- Хронологія подій -->
+      <div class="timeline">
+         <h2>📅 Хронологія подій</h2>
+
+         <div class="timeline-row">
+            <div class="timeline-date">24 лютого 2022</div>
+            <div class="timeline-text">
+               О 5-й ранку Росія розпочала повномасштабне вторгнення в Україну. Колони
+               російських військ пішли з території Білорусі через Чорнобильську зону
+               в напрямку Києва. Вишгородський район першим прийняв удар.
+            </div>
+         </div>
+
+         <div class="timeline-row">
+            <div class="timeline-date">26–27 лютого</div>
+            <div class="timeline-text">
+               Російські підрозділи увійшли до Катюжанки. Розпочалася окупація.
+               Командний пункт загарбники облаштували у приміщенні
+               місцевої загальноосвітньої школи.
+            </div>
+         </div>
+
+         <div class="timeline-row">
+            <div class="timeline-date">Лютий — березень</div>
+            <div class="timeline-text">
+               37 днів окупації. Жителі залишалися в підвалах і домівках. Мародерство,
+               залякування, обмеження пересування. Особливо жорстоко
+               поводилися підрозділи, які місцеві жителі ідентифікували як бурятські.
+               Пограбовано магазин, знищено майно.
+            </div>
+         </div>
+
+         <div class="timeline-row">
+            <div class="timeline-date">30 березня 2022</div>
+            <div class="timeline-text">
+               Збройні Сили України розпочали контрнаступ на Київщині.
+               Катюжанку звільнено від окупантів.
+               Після відходу ворога в школі було знайдено щоденник російського офіцера —
+               документ, який став предметом журналістських розслідувань.
+            </div>
+         </div>
+
+         <div class="timeline-row">
+            <div class="timeline-date">2 квітня 2022</div>
+            <div class="timeline-text">
+               Київська область повністю звільнена від російської окупації.
+               Президент України Володимир Зеленський відвідав Бучу та інші
+               звільнені міста Київщини.
+            </div>
+         </div>
+
+         <div class="timeline-row">
+            <div class="timeline-date">Квітень 2022 — далі</div>
+            <div class="timeline-text">
+               Відновлення. Жителі Катюжанки повертаються до мирного життя.
+               Відбудова пошкодженого майна. Підтримка родин загиблих захисників.
+               Допомога армії триває.
+            </div>
+         </div>
+      </div>
+
+      <!-- Що пережило село -->
+      <div class="section-block">
+         <h2>Що пережило наше село</h2>
+         <p>
+            Катюжанка розташована за 47 кілометрів на північ від Києва — на шляху,
+            яким загарбники планували швидко захопити столицю України. Саме тому
+            Вишгородський район опинився під окупацією вже в перші дні повномасштабної війни.
+         </p>
+         <p>
+            Понад місяць жителі жили в умовах окупації. Без нормального зв'язку, без
+            можливості вільно пересуватися, в постійному страху. Частина мешканців
+            заздалегідь виїхала — хто до родичів в інші регіони, хто за кордон.
+            Ті, хто залишився, ховалися в підвалах під час обстрілів, допомагали
+            одне одному виживати.
+         </p>
+
+         <div class="quote-block">
+            «Найгірше поводилися бурятські підрозділи — грабували, мародерили,
+            залякували людей, виселяли з хат.»
+            <div class="quote-source">— Зі свідчень жителів Катюжанки, квітень 2022 р.</div>
+         </div>
+
+         <p>
+            Командний пункт окупанти облаштували прямо в приміщенні сільської школи —
+            місця, де навчаються діти. Після звільнення тут знайшли залишені речі,
+            документи і особистий щоденник одного з російських офіцерів.
+            Цей щоденник містив записи, які свідчать про моральний стан
+            та ставлення загарбників до власних дій.
+         </p>
+         <p>
+            Але Катюжанка вистояла. Ворог пішов. Наше село знову вільне.
+         </p>
+      </div>
+
+      <!-- Пам'ять про захисників -->
+      <div class="memory-block">
+         <h2>⭐ Вічна пам'ять нашим захисникам</h2>
+         <p style="font-size:14px; color:#ccc; margin-bottom:16px;">
+            Жителі Катюжанки, які віддали своє життя, захищаючи Україну
+         </p>
+
+         <div class="defender-card">
+            <div class="def-name">Габорак Олег</div>
+            <div class="def-years">1997 — 2015</div>
+            <div class="def-note">Герой АТО, уродженець Катюжанки</div>
+         </div>
+
+         <div class="defender-card">
+            <div class="def-name">Орлов Олег</div>
+            <div class="def-years">1973 — 2016</div>
+            <div class="def-note">Захисник України, житель Катюжанки</div>
+         </div>
+
+         <!-- Додайте тут інших загиблих захисників з вашого села -->
+         <!-- Зразок:
+         <div class="defender-card">
+            <div class="def-name">Прізвище Ім'я</div>
+            <div class="def-years">рік народж. — рік загибелі</div>
+            <div class="def-note">Короткий підпис</div>
+         </div>
+         -->
+
+         <div class="eternal-memory">
+            Вічна Пам'ять ! Героям Слава !
+         </div>
+      </div>
+
+      <!-- Відновлення -->
+      <div class="section-block">
+         <h2>Відновлення та допомога громаді</h2>
+         <p>
+            Після звільнення жителі Катюжанки з новою силою взялися до відбудови.
+            Місцева громада, волонтери, родичі з інших регіонів допомагали відновлювати
+            пошкоджене майно, забезпечувати найбільш постраждалих.
+         </p>
+         <p>
+            Особлива подяка — всім, хто в найтяжчі дні окупації не залишив
+            сусідів напризволяще: допомагав продуктами, ліками, інформацією.
+            Справжній дух громади — саме в такі моменти.
+         </p>
+         <p>
+            Якщо ви маєте власні спогади, фотографії або документи часів окупації
+            і готові поділитися ними для збереження пам'яті —
+            зверніться до адміністратора сайту:
+            <a href="mailto:_pvi@ukr.net" style="color:#006400;">_pvi@ukr.net</a>
+         </p>
+      </div>
+
+      <!-- Посилання -->
+      <div class="links-block">
+         <h2>📎 Додаткові матеріали</h2>
+         <a href="kat_vvv_ogl.html" target="_blank">Катюжанка у Другій Світовій Війні (1941–1945)</a>
+         <a href="https://www.bbc.com/ukrainian/news-60977751" target="_blank" rel="noopener">
+            BBC Україна: Звільнення Київщини (зовнішнє посилання)
+         </a>
+         <a href="https://dymerrada.gov.ua/" target="_blank" rel="noopener">
+            Офіційний сайт Димерської ОТГ — новини відновлення
+         </a>
+         <a href="https://www.facebook.com/groups/katonline" target="_blank" rel="noopener">
+            Катюжанка online у Facebook — живі свідчення жителів
+         </a>
+      </div>
+
+      <!-- Нижній блок пам'яті -->
+      <div style="text-align:center; border:1px solid #006400; background:#f8fff8; padding:14px; margin-bottom:20px;">
+         <div style="font-size:16px; font-weight:bold; color:#006400; margin-bottom:6px;">
+            🇺🇦 Україна переможе ! 🇺🇦
+         </div>
+         <div style="font-size:14px; color:#333;">
+            Наше село пережило окупацію і повстало.
+            Пам'ятаємо. Пишаємося. Не пробачимо.
+         </div>
+      </div>
+
+      <div align="center" style="font-size:13px; color:#666;">
+         Сторінку підготовлено на основі відкритих джерел та свідчень жителів.<br>
+         Якщо є неточності або ви хочете доповнити матеріал — пишіть:
+         <a href="mailto:_pvi@ukr.net" style="color:#006400;">_pvi@ukr.net</a>
+      </div>
+
+      <br>
+      <div align="right">
+         <a href="#" style="color:#006400;">▲ На початок сторінки</a>
+      </div>
+
+   </div><!-- /page-2022 -->
+
+   <!-- ======== Підвал — той самий що на головній ======== -->
+   <footer>
+      <hr>
+      <div align="center" style="color:#000000; font-size:14px; font-weight:normal;">
+         Село Катюжанка , Вишгородський район , Київська область , Україна , 07313 , Інтернет-довідник.<br>
+         <script>
+            document.write("Copyright &copy; 2015 - " + new Date().getFullYear() + " год.");
+         </script>
+         &nbsp;&nbsp;&nbsp;
+         E-mail: <a href="mailto:_pvi@ukr.net" style="font-size:14px; color:#000000; text-decoration:none;">_pvi@ukr.net</a>
+      </div>
+      <div align="center" style="color:#000000; font-size:13px; margin-top:6px;">
+         Всі матеріали на цьому інформаційному ресурсі надані ВИКЛЮЧНО з ОЗНАЙОМЧОЮ, УЧБОВОЮ та ОСВІТНЬОЮ метою,<br>
+         адміністрація ресурсу не претендує на їх авторство і не несе відповідальності за їх зміст.
+      </div>
+   </footer>
+
+</div><!-- /wrap-body -->
+
+<script type="text/javascript" src="js_n/jquery.min.js"></script>
+<script type="text/javascript" src="js_n/navigation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дошка оголошень</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .btn-add {
+            display: block;
+            width: 250px;
+            margin: 20px auto;
+            padding: 12px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .btn-add:hover {
+            background-color: #218838;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border-left: 5px solid #007bff;
+        }
+        .card-date {
+            font-size: 0.85em;
+            color: #888;
+            margin-bottom: 8px;
+        }
+        .card-text {
+            font-size: 1.1em;
+            color: #222;
+            white-space: pre-line;
+        }
+        #loading {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+        }
+        .error-box {
+            color: red;
+            text-align: center;
+            background: #fff0f0;
+            padding: 15px;
+            border: 1px solid #ffcccc;
+            border-radius: 5px;
+        }
+        .error-details {
+            font-size: 0.85em;
+            color: #555;
+            margin-top: 5px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Безкоштовна дошка оголошень</h1>
+
+    <a href="https://forms.gle/sdXb7yDH55cGP8RKA" target="_blank" class="btn-add">Додати оголошення</a>
+
+    <hr>
+
+    <div id="board">
+        <div id="loading">Завантаження оголошень...</div>
+    </div>
+
+    <script>
+        // ПОВЕРТАЄМО ВАШЕ СТОВІДСОТКОВО ПРАВИЛЬНЕ ПОСИЛАННЯ ПУБЛІКАЦІЇ
+        const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSlPgFy2O5vmbmneEtlHp3yTzmCthoy4bvV_DnmnS7Agj1Y1GMSd_synGWR-4b93fB0n6cYu31zCpG9/pub?output=csv';
+
+        async function loadAnnouncements() {
+            try {
+                const response = await fetch(csvUrl);
+                
+                if (!response.ok) {
+                    throw new Error(`Сервер Google повернув помилку зі статусом: ${response.status}`);
+                }
+                
+                const data = await response.text();
+                const lines = data.split(/\r?\n/);
+                
+                const board = document.getElementById('board');
+                board.innerHTML = ''; 
+
+                if (lines.length <= 1 || lines[1].trim() === '') {
+                    board.innerHTML = '<p style="text-align:center;">Оголошень поки немає. Будьте першим!</p>';
+                    return;
+                }
+
+                let announcements = [];
+
+                for (let i = 1; i < lines.length; i++) {
+                    const currentLine = lines[i].trim();
+                    if (currentLine === '') continue;
+
+                    const firstCommaIndex = currentLine.indexOf(',');
+                    
+                    if (firstCommaIndex !== -1) {
+                        let date = currentLine.substring(0, firstCommaIndex).replace(/"/g, '');
+                        let text = currentLine.substring(firstCommaIndex + 1).replace(/"/g, '');
+                        
+                        if(text.startsWith('"') && text.endsWith('"')) {
+                            text = text.slice(1, -1);
+                        }
+
+                        announcements.push({ date, text });
+                    }
+                }
+
+                announcements.reverse();
+
+                announcements.forEach(item => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="card-date">${item.date}</div>
+                        <div class="card-text">${item.text}</div>
+                    `;
+                    board.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error('Помилка:', error);
+                document.getElementById('board').innerHTML = `
+                    <div class="error-box">
+                        <strong>Не вдалося завантажити оголошення.</strong><br>
+                        Спробуйте оновити сторінку або перевірте налаштування доступу.
+                        <div class="error-details">Технічна інформація: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        loadAnnouncements();
+    </script>
+
+</body>
+</html>

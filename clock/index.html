@@ -1,0 +1,113 @@
+<div align="center"> 
+ <canvas id="clock" width="250" height="250">Извините, ваш браузер не поддерживает тег canvas</canvas>
+</div>
+<script type="text/javascript">
+function analogClock () {
+ var oldSeconds = 0;
+ 
+ function updateClock() {
+  var t = new Date();
+  var clockArms = [t.getHours(), t.getMinutes(), t.getSeconds()];
+  if (clockArms[2] == oldSeconds) return; //секунды не менялись? выйти
+  oldSeconds = clockArms[2];
+ 
+  var c = document.getElementById('clock');
+  var ctx = c.getContext('2d');
+  //очистить канву: 
+  ctx.fillStyle = '#dcdcdc';
+  ctx.fillRect(0, 0, c.width, c.height);
+  //нарисовать контур часов:
+  var x = Math.round(c.width/2);
+  var y = Math.round(c.height/2);
+  var r = Math.round(Math.min(x,y)-2);
+  ctx.beginPath(); 
+  ctx.arc(x,y,r,0,2*Math.PI,true);
+  //нарисовать градиент на циферблате:
+  var grd=ctx.createRadialGradient(x,y,0,x,y,r);
+//  grd.addColorStop(0,'#EEDDEE');
+//  grd.addColorStop(0.5,'#CCEECC');
+//  grd.addColorStop(1,'#99FF99');
+/// Убрать градиент
+//  grd.addColorStop(0,'#EEDDEE');
+//  grd.addColorStop(0.5,'#CCEECC');
+//  grd.addColorStop(1,'#8B4513');
+
+  ctx.fillStyle = grd;
+  ctx.fill();
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = '#C0C0C0';
+  ctx.stroke();
+  ctx.closePath();
+  //нарисовать метки циферблата и цифры:
+  ctx.save();
+  ctx.textBaseline = "middle";
+  ctx.textAlign = 'center';
+//  ctx.shadowColor = '#800000';
+  ctx.shadowColor = '#ffffff';
+  ctx.shadowOffsetX = 3;
+  ctx.shadowOffsetY = 3;
+  ctx.shadowBlur = 6;
+  var delta = Math.max(8,Math.round(r/10)); //для размера шрифта и отсечек
+  ctx.font = 'bold '+delta+'pt sans-serif';
+  var u=Math.PI/2;
+  var hour = 1;
+  for (var i=1; i<=60; i++) {
+   ctx.beginPath();
+   var r1=r-delta;
+   if (i%5!=2) r1+=delta/2;
+   var x1 = x+Math.round(r1*Math.cos(u)), //так можно узнать позиции делений циферблата
+       y1 = y-Math.round(r1*Math.sin(u)),
+       x2 = x+Math.round(r*Math.cos(u)),
+       y2 = y-Math.round(r*Math.sin(u));
+   ctx.strokeStyle = '#606060';
+   ctx.moveTo(x1,y1);
+   ctx.lineTo(x2,y2); //Вывести деление
+   u+=Math.PI/30;
+   ctx.stroke();
+   ctx.closePath();
+   if (i%5==2) {
+    ctx.fillStyle = '#202020';
+    ctx.fillText (''+(13-hour),x1,y1); //а так вывести цифры по часовому кругу
+    hour++;
+    ctx.fill();
+   }
+  }
+  ctx.restore();
+  //нарисовать стрелки:
+  clockArms[1] += clockArms[2] / 60;
+  clockArms[0] += clockArms[1] / 60;
+  drawClockArm(ctx, x, y, clockArms[0] * 30, 2*r/2.5 - 15, 5, '#000080');
+  drawClockArm(ctx, x, y, clockArms[1] * 6,  2*r/2.2 - 10, 3, '#008000');
+  drawClockArm(ctx, x, y, clockArms[2] * 6,  2*r/2.0 - 6,  2, '#800000');
+ }
+ 
+ function drawClockArm(ctx, x,y, degrees, len, lineWidth, style) {
+  ctx.save();
+  ctx.lineWidth = lineWidth;
+  ctx.lineCap = 'round';
+  ctx.translate(x, y);
+  ctx.rotate((degrees - 90) * Math.PI / 180);
+  ctx.strokeStyle = style;
+  ctx.beginPath();
+  ctx.moveTo(-len / 10, 0);
+  ctx.lineTo(len, 0);
+  ctx.stroke();
+  ctx.closePath();
+  ctx.restore();
+ }
+ 
+ function initClock() {
+  window.setInterval(updateClock, 333); //интервал обновления - треть секунды
+ }
+
+ initClock();
+}
+
+onload = analogClock;
+</script>
+<noscript>
+ <div align="center">
+  Извините, для работы приложения нужен включённый Javascript
+ </div>
+</noscript>
+

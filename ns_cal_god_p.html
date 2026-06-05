@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"">
+   <title> Повний календар на поточний рік. </title>
+   <meta name="title" content="Повний календар на поточний рік. ">
+   <meta name="author" content="Валентин Приходько">
+   <meta name="keywords"       content="Повний календар на поточний рік."> 
+   <meta http-equiv="keywords" content="Повний календар на поточний рік.">
+   <meta name="robots" content="index,follow">
+   <meta name="description"    content="Повний календар на поточний рік.">
+   <meta name="copyright" content=" Copyright © 2015 - 2016 г.  , all rights reserved.">
+   <meta name="document-state" content="dynamic">
+   <meta name="revisit-after" content="1 days">
+   <meta name="classification" content="Повний календар на поточний рік.">
+   <meta name="category" content="Повний календар на поточний рік.">
+   <meta http-equiv="language" content="russian">
+   <meta name="rating" content="general">
+   <meta name="distribution" content="global">
+   <meta name="resourse-type" content="document">
+<!>
+<!-- CSS -->
+<link href="styles.css"      rel="stylesheet" type="text/css" media="screen" />
+<! Стилі для випадаючих меню>
+<link href="styles_menu.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+<body id="body1">
+<! --- Заголовок початок --- >
+     <!-- Виведення поточної дати. -->
+     <div align = right>
+          <Script language="JavaScript">
+                  var now = new Date();
+                  var days = new Array(' Неділя ',' Понеділок ',' Вівторок ',' Середа ',' Четвер ',' Пятниця ',' Субота ');
+                  var months = new Array(' Січня ',' Лютого ',' Березня ',' Квітня ',' Травня ',' Червня ',' Липня ',' Серпня ',' Вересня ',' Жовтня  ',' Листопада ',' Грудня ');
+                  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                  function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                  today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " року ";
+                  document.write("<font color = #FFFF00 ><strong>"+"  "+today+ ".&nbsp;"+"</strong></font>");
+          </script>
+     </div>
+     
+<div id="content1">
+     <! --- Заголовок початок --- >
+     <div id="header" >
+          <div style = "position:absolute;top:20px;left:40px; ">
+          <a href="index.html" target = _self ><img src="img/gerb_1.png"  width="108" align = middle  height="114" alt = " Село Катюжанка  Вишгородський район Київська область Україна 07313 Інтернет-довідник  отець отец священник Олександр Александр ." title = "  Село Катюжанка  Вишгородський район Київська область Україна 07313 Інтернет-довідник отець отец священник Олександр Александр. " ></a>
+          </div> 
+     </div>
+
+     <! --- Заголовок кінець --- >
+     <! --- Назва сайта початок --- >
+     <div style = " position: relative; border: dotted 1px black;"  align = center >
+          <p style = "color: #037931; font-size: 14px; font-weight: bold; position:absolute;top:130px;left:10px; ">
+             <a href="index.html" target = _self ><font color = "#037931">
+             Село Катюжанка <br>
+             Вишгородський район<br> 
+             Київська область<br> 
+             Україна <br>
+             07313 <br>
+             Інтернет-довідник.<br>
+             Головна сторінка.</font></a>
+         </p>
+    </div>
+     <! --- Назва сайта кінець --- >
+     <div id="main">
+<hr color = #000000>
+<div id = "right" align = center >
+<font color = black >
+<?php 
+     if (!defined('_SAPE_USER')){
+        define('_SAPE_USER', 'f564309f61693f5895513c7f6a52c461'); 
+     }
+     require_once($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'); 
+     $sape = new SAPE_client();
+?>
+<? echo $sape->return_links(2); ?>
+</font>
+</div>
+
+          <! --- Центральна  колонка початок  --- >
+          <div style = "width: 740px; height: 500px; padding-left: 20px;">
+		     <h1 align = center > Повний календар на поточний рік. </h1><br />
+               <! --------------  ОСНОВНИЙ КОНТЕНТ > 
+<! --------------  ОСНОВНИЙ КОНТЕНТ > 
+<hr>
+<! Включений документ > 
+<object data = "ns_cal_god.html" type = "text/html" align = center border = 1 width =  100% height = 450 >  Ваш броузер не підтримує 	тег object !!! </object>
+<hr>
+<! --------------  > 
+
+          </div>
+     </div>
+     <! --- Центральна  колонка кінець  --- >
+     <! --- Підвал сторінки початок  --- >
+<div id = "right" align = center >
+<font color = black >
+<? echo $sape->return_links(); ?>
+<br>
+<?php
+require_once ($_SERVER['DOCUMENT_ROOT'].'/setlinks_68fec/slsimple.php');
+?>
+</font>
+</div> 
+ 
+
+<div id="footer">
+     <p style = "color: #ffffff; font-size: 11px; font-weight: bold;">
+	   Село Катюжанка , Вишгородський район , Київська область , Україна , 07313 , Інтернет-довідник.<br>  
+        <Script language="JavaScript">
+                var now = new Date();
+                today =  fourdigits(now.getYear());
+                document.write("<font color = #ffffff ><strong>"+"Copyright © 2015 - "+today+ " рік."+"</strong></font>");
+        </script>
+	   E-mail: <a href ="mailto:_pvi@ukr.net" target=_blank > <strong>_pvi@ukr.net</b></strong>
+     </p> 
+</div>
+<hr><br>
+     <! --- Підвал сторінки кінець  --- >
+</div>
+</body>
+</html>

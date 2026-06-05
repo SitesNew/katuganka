@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Ishodniki.Ru - Scripts - JavaScript - Scientific</title>
+<META http-equiv="Content-Type" content="text/html; charset="UTF-8"">
+ <Style>
+   A:Link{ Color: #000000; Text-decoration: underline} 
+   A:Visited{ Color: #000000; Text-decoration: underline}
+   A:Hover{ Color: #000000; Text-decoration: none}
+ td, body { font-weight: bold; font-family: Courier New, tahoma, verdana, arial, helvetica; font-size:26px;}  
+ </Style> 
+
+<!-- HEAD START HERE -->
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+<!-- Begin
+function addChar(input, character) {
+if(input.value == null || input.value == "0")
+input.value = character
+else
+input.value += character
+}
+function cos(form) {
+form.display.value = Math.cos(form.display.value);}
+function sin(form) {
+form.display.value = Math.sin(form.display.value);}
+function tan(form) {
+form.display.value = Math.tan(form.display.value);}
+function sqrt(form) {
+form.display.value = Math.sqrt(form.display.value);}
+function ln(form) {
+form.display.value = Math.log(form.display.value);}
+function exp(form) {
+form.display.value = Math.exp(form.display.value);}
+function sqrt(form) {
+form.display.value = Math.sqrt(form.display.value);}
+function deleteChar(input) {
+input.value = input.value.substring(0, input.value.length - 1)
+}
+function changeSign(input) {
+if(input.value.substring(0, 1) == "-")
+input.value = input.value.substring(1, input.value.length)
+else
+input.value = "-" + input.value
+}
+function compute(form)  {
+form.display.value = eval(form.display.value)}
+function square(form)  {
+form.display.value = eval(form.display.value) *
+eval(form.display.value)}
+function checkNum(str)  {
+for (var i = 0; i < str.length; i++) {
+var ch = str.substring(i, i+1)
+if (ch < "0" || ch > "9") {
+if (ch != "/" && ch != "*" && ch != "+" && ch !=
+"-" && ch != "."
+&& ch != "(" && ch!= ")") {
+alert("invalid entry!")
+return false
+         }
+      }
+   }
+return true
+}
+// End -->
+</SCRIPT>
+
+<!-- HEAD END HERE -->
+
+
+
+
+</head>
+<body bgcolor="#EDEDED" text="#000000" link="#000000" topmargin="0" leftmargin="0">
+<center>
+
+<!-- BODY START HERE -->
+
+<FORM>
+<input name="display" value="0" size=25></td>
+<br>
+<input type="button" value="   exp  " onClick="if (checkNum(this.form.display.value)) { 
+exp(this.form) }">
+<input type="button" value="    7    " onClick="addChar(this.form.display, '7')">
+<input type="button" value="    8    " onClick="addChar(this.form.display, '8')">
+<input type="button" value="    9    " onClick="addChar(this.form.display, '9')">
+<input type="button" value="    /    " onClick="addChar(this.form.display, '/')">
+<br>
+<input type="button" value="   ln    " onClick="if (checkNum(this.form.display.value)) { 
+ln(this.form) }">
+<input type="button" value="    4    " onClick="addChar(this.form.display, '4')">
+<input type="button" value="    5    " onClick="addChar(this.form.display, '5')">
+<input type="button" value="    6    " onClick="addChar(this.form.display, '6')">
+<input type="button" value="    *    " onClick="addChar(this.form.display, '*')">
+<br>
+<input type="button" value="   sqrt  " onClick="if (checkNum(this.form.display.value)) {
+sqrt(this.form) }">
+<input type="button" value="    1    " onClick="addChar(this.form.display, '1')">
+<input type="button" value="    2    " onClick="addChar(this.form.display, '2')">
+<input type="button" value="    3    "  onClick="addChar(this.form.display, '3')">
+<input type="button" value="    -    "  onClick="addChar(this.form.display, '-')">
+<br>
+<input type="button" value="   sq    " onClick="if (checkNum(this.form.display.value)) { 
+square(this.form) }">
+<input type="button" value="    0    " onClick="addChar(this.form.display, '0')"> 
+<input type="button" value="    .    " onClick="addChar(this.form.display, '.')"> 
+<input type="button" value="   +/-   " onClick="changeSign(this.form.display)">
+<input type="button" value="    +    " onClick="addChar(this.form.display, '+')">
+<br>
+<input type="button" value="    (    " onClick="addChar(this.form.display, '(')"> 
+<input type="button" value="   cos   " onClick="if (checkNum(this.form.display.value)) { 
+cos(this.form) }">
+<input type="button" value="   sin   " onClick="if (checkNum(this.form.display.value)) {
+sin(this.form) }">
+<input type="button" value="   tan   " onClick="if (checkNum(this.form.display.value)) { 
+tan(this.form) }">
+<input type="button" value="    )    " onClick="addChar(this.form.display, ')')"> 
+<br>
+<input type="button" value="   Clear       "  onClick="this.form.display.value = 0 ">
+<input type="button" value="   Back Space  " onClick="deleteChar(this.form.display)">
+<input type="button" value="   Enter       " name="enter"
+onClick="if (checkNum(this.form.display.value)) { 
+compute(this.form) }">
+</FORM>
+
+<!-- BODY END HERE -->
+
+
+
+</body>
+</html>
+

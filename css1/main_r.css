@@ -1,0 +1,306 @@
+@import url(reset.css);
+
+body {
+	background: #ffffff;
+	color: #505050;
+	font: 13px/18px "Trebuchet MS", Arial;
+}
+a {
+	color: #167dcc;
+	cursor: pointer;
+}
+#container {
+	position: relative;
+	width: 920px;
+	min-height: 100%;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+	padding: 0 30px 120px 30px;
+}
+#header {
+	background: url(../images/header_bg.jpg) 0 0 no-repeat;
+	height: 341px;
+	position: relative;
+}
+#logo {
+	background: url(../images/logo.gif) 0 0 no-repeat;
+	overflow: hidden;
+	display: block;
+	height: 34px;
+	width: 175px;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+#phone {
+	background: url(../images/phone.gif) 0 0 no-repeat;
+	overflow: hidden;
+	height: 20px;
+	width: 126px;
+	position: absolute;
+	top: 33px;
+	left: 235px;
+}
+#email {
+	background: url(../images/email.gif) 0 0 no-repeat;
+	overflow: hidden;
+	display: block;
+	height: 26px;
+	width: 119px;
+	text-align: center;
+	position: absolute;
+	top: 28px;
+	left: 375px;
+	font-size: 11px;
+	padding: 5px 0 0 0;
+}
+#menu {
+	width: 240px;
+	position: absolute;
+	top: 90px;
+	left: 0;
+}
+#menu li {
+	background: url(../images/dots.gif) 0 100% repeat-x;
+	padding: 0 0 1px 0;
+}
+
+#menu li a {
+	display: block;
+	padding: 4px 20px 5px 25px;
+	background: url(../images/menu_li.gif) 6px 10px no-repeat;
+	position: relative;
+	font-size: 11px;
+}
+#menu li.active a, #menu li a:hover {
+	background: #f4f4f4;
+	color: #505050;
+}
+#buttons {
+	position: absolute;
+	top: 28px;
+	right: 26px;
+	white-space: nowrap;
+	font-size: 0;
+}
+#buttons li {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	_display: inline;
+	vertical-align: top;
+	width: 33px;
+	height: 31px;
+	overflow: hidden;
+	padding: 0 0 0 10px;
+}
+#buttons li a {
+	display: block;
+	background: url(../images/buttons.png) 0 0 no-repeat;
+	width: 33px;
+	height: 31px;
+	overflow: hidden;
+}
+#buttons li.home a {
+	background-position: 0 -31px;
+}
+#buttons li.contacts a {
+	background-position: -33px -31px;
+}
+#buttons li.pricelist a {
+	background-position: -66px -31px;
+}
+#buttons li.home a:hover {
+	background-position: 0 -62px;
+}
+#buttons li.contacts a:hover {
+	background-position: -33px -62px;
+}
+#buttons li.pricelist a:hover {
+	background-position: -66px -62px;
+}
+
+#main {
+	overflow: hidden;
+	padding: 0 0 25px 0;
+}
+#sidebar {
+	float: left;
+	width: 250px;
+	margin: 0 -250px 0 0;
+	font-size: 11px;
+}
+#content {
+	position: relative;
+}
+#content h1 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	font-style: italic;
+	padding: 30px 0 20px 0;
+}
+#content h2 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	font-style: italic;
+	padding: 30px 0 20px 0;
+	color: #2987d0;
+}
+#content p {
+	padding: 0 0 1px 0;
+}
+#content ul {
+	padding: 0 0 18px 0;
+}
+#content li {
+	padding: 0 0 5px 35px;
+	background: url(../images/li.gif) 15px 6px no-repeat;
+}
+#sidebar h5 {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: normal;
+	font-style: italic;
+	color: #2987d0;
+	padding: 30px 0 20px 0;
+}
+.gallery {
+	position: relative;
+	font-size: 0;
+	padding: 0 0 5px 0;
+}
+.gallery_item {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	_display: inline;
+	vertical-align: top;
+	position: relative;
+	width: 112px;
+	height: 112px;
+	overflow: hidden;
+	padding: 0 6px 6px 0;
+}
+.gallery_item a {
+	_behavior: url(css/iepngfix.htc);
+	display: block;
+	position: absolute;
+	z-index: 5;
+	width: 112px;
+	height: 112px;
+	overflow: hidden;
+	background: url(../images/frame.png) 0 0 no-repeat;
+}
+.gallery_item img {
+	display: block;
+	width: 112px;
+	height: 112px;
+}
+#sidebar span {
+	font-size: 13px;
+}
+#sidebar_phone {
+	background: url(../images/phone.gif) 0 0 no-repeat;
+	overflow: hidden;
+	height: 20px;
+	width: 126px;
+	margin: 13px 0 13px 0;
+}
+#footer {
+	background: url(../images/footer_bg.jpg) 125px 100% no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 940px;
+	height: 70px;
+	padding: 50px 0 0 0;
+	font-size: 11px;
+	line-height: 14px;
+}
+#footer p {
+	padding: 0 0 0 30px;
+}
+#copyright {
+	position: absolute;
+	bottom: 0;
+	left: 450px;
+	height: 70px;
+	padding: 50px 0 0 0;
+	font-size: 11px;
+	line-height: 14px;
+}
+#footer_links {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 70px;
+	padding: 50px 0 0 0;
+	font-size: 11px;
+	line-height: 14px;
+	color: #9f9f9f;
+	word-spacing: 6px;
+	_word-spacing: normal;
+}
+#footer_links a {
+	color: #d67707;
+	word-spacing: normal;
+}
+a.orange {
+	color: #dc7c0a;
+}
+#advances, #offer {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+	_display: inline;
+	vertical-align: top;
+	padding: 0 0 0 0;
+	width: 315px;
+	position: relative;
+}
+#advances ul {
+	padding: 0 0 0 0;
+	font-size: 11px;
+}
+#advances li {
+	padding: 2px 10px 2px 20px;
+	margin: 0 0 12px 0;
+	background: none;
+	border-left: 2px solid #eb8b1a;
+	line-height: 16px;
+	zoom: 1;
+}
+#advances li.more {
+	padding: 2px 10px 2px 22px;
+	margin: 0 0 12px 0;
+	background: none;
+	border-left: none;
+	line-height: 18px;
+	font-size: 13px;
+}
+
+.inline_container {
+	padding: 7px 0 0 0;
+	font-size: 0;
+	position: relative;
+}
+#offer_banner {
+	background: url(../images/banner.jpg) 0 0 no-repeat;
+	width: 100%;
+	height: 138px;
+	display: block;
+}
+#offer_more {
+	background: url(../images/more.gif) 0 0 no-repeat;
+	width: 119px;
+	height: 21px;
+	display: block;
+	font-size: 11px;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	position: absolute;
+	top: 30px;
+	right: 0;
+}

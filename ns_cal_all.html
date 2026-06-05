@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"">
+   <title> Вічний календар. </title>
+   <meta name="title" content="Вічний календар. ">
+   <meta name="author" content="Валентин Приходько">
+   <meta name="keywords"       content="Вічний календар."> 
+   <meta http-equiv="keywords" content="Вічний календар.">
+   <meta name="robots" content="index,follow">
+   <meta name="description"    content="Вічний календар.">
+   <meta name="copyright" content=" Copyright © 2015 - 2022 г.  , all rights reserved.">
+   <meta name="document-state" content="dynamic">
+   <meta name="revisit-after" content="1 days">
+   <meta name="classification" content="Вічний календар.">
+   <meta name="category" content="Вічний календар.">
+   <meta http-equiv="language" content="russian">
+   <meta name="rating" content="general">
+   <meta name="distribution" content="global">
+   <meta name="resourse-type" content="document">
+<!>
+
+
+<!-- Вставьте эту часть кода между тегами <HEAD></HEAD> вашего документа -->
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- Begin
+function setToday() {
+var now   = new Date();
+var day   = now.getDate();
+var month = now.getMonth();
+var year  = now.getYear();
+if (year < 2000)    // Y2K Fix, Isaac Powell
+year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+this.focusDay = day;
+document.calControl.month.selectedIndex = month;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+}
+function isFourDigitYear(year) {
+if (year.length != 4) {
+alert ("Sorry, the year must be four-digits in length.");
+document.calControl.year.select();
+document.calControl.year.focus();
+} else { return true; }
+}
+function selectDate() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+displayCalendar(month, year);
+    }
+}
+
+function setPreviousYear() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+year--;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function setPreviousMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 0) {
+month = 11;
+if (year > 1000) {
+year--;
+document.calControl.year.value = year;
+}
+} else { month--; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextMonth() {
+var year  = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day   = 0;
+var month = document.calControl.month.selectedIndex;
+if (month == 11) {
+month = 0;
+year++;
+document.calControl.year.value = year;
+} else { month++; }
+document.calControl.month.selectedIndex = month;
+displayCalendar(month, year);
+   }
+}
+function setNextYear() {
+var year = document.calControl.year.value;
+if (isFourDigitYear(year)) {
+var day = 0;
+var month = document.calControl.month.selectedIndex;
+year++;
+document.calControl.year.value = year;
+displayCalendar(month, year);
+   }
+}
+function displayCalendar(month, year) {       
+month = parseInt(month);
+year = parseInt(year);
+var i = 0;
+var days = getDaysInMonth(month+1,year);
+var firstOfMonth = new Date (year, month, 1);
+var startingPos = firstOfMonth.getDay();
+days += startingPos;
+document.calButtons.calPage.value  =   " Нд Пн Вт Ср Чт Пт Сб";
+document.calButtons.calPage.value += "\n --------------------";
+for (i = 0; i < startingPos; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+document.calButtons.calPage.value += "   ";
+}
+for (i = startingPos; i < days; i++) {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+if (i-startingPos+1 < 10)
+document.calButtons.calPage.value += "0";
+document.calButtons.calPage.value += i-startingPos+1;
+document.calButtons.calPage.value += " ";
+}
+for (i=days; i<42; i++)  {
+if ( i%7 == 0 ) document.calButtons.calPage.value += "\n ";
+document.calButtons.calPage.value += "   ";
+}
+document.calControl.Go.focus();
+}
+function getDaysInMonth(month,year)  {
+var days;
+if (month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12)  days=31;
+else if (month==4 || month==6 || month==9 || month==11) days=30;
+else if (month==2)  {
+if (isLeapYear(year)) { days=29; }
+else { days=28; }
+}
+return (days);
+}
+function isLeapYear (Year) {
+if (((Year % 4)==0) && ((Year % 100)!=0) || ((Year % 400)==0)) {
+return (true);
+} else { return (false); }
+}
+// End -->
+</SCRIPT>
+</head>
+<!-- Вставьте эту часть кода в тег <BODY> -->
+
+<BODY onLoad="setToday()">
+<!-- Вставьте эту часть кода в html документ -->
+
+<CENTER>
+     <div align = center>
+          <Script language="JavaScript">
+                  var now = new Date();
+                  var days = new Array(' Неділя ',' Понеділок ',' Вівторок ',' Середа ',' Четвер ',' Пятниця ',' Субота ');
+                  var months = new Array(' Січня ',' Лютого ',' Березня ',' Квітня ',' Травня ',' Червня ',' Липня ',' Серпня ',' Вересня ',' Жовтня  ',' Листопада ',' Грудня ');
+                  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                  function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                  today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " року ";
+                  document.write("<font color = #000000 ><strong>"+" Поточний  день : "+today+ ".&nbsp;"+"</strong></font>");
+          </script>
+     </div>
+<!>  
+<div  align = center >
+<font color = black >
+<?php
+     if (!defined('_SAPE_USER')){
+        define('_SAPE_USER', 'f564309f61693f5895513c7f6a52c461');
+     }
+     require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+     $sape = new SAPE_client();
+?>
+<? echo $sape->return_links(2); ?>
+</font>
+</div> 
+<!>
+
+<br>
+<div><strong>Вічний календар !!! Виберіть будь-який рік чи місяць для перегляду !</strong></div>
+<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0><TR><TD width=50%  valign = top>
+<FORM NAME="calControl" onSubmit="return false;">
+<TABLE CELLPADDING=2 CELLSPACING=2 BORDER=1>
+<TR><TD COLSPAN=7>
+<CENTER>
+<SELECT NAME="month" onChange="selectDate()">
+<OPTION>Січень
+<OPTION>Лютий  
+<OPTION>Березень
+<OPTION>Квітень
+<OPTION>Травень
+<OPTION>Червень
+<OPTION>Липень
+<OPTION>Серпень
+<OPTION>Вересень
+<OPTION>Жовтень
+<OPTION>Листопад
+<OPTION>Грудень
+</SELECT>
+<INPUT NAME="year" TYPE=TEXT SIZE=4 MAXLENGTH=4>
+<INPUT TYPE="button" NAME="Go" value="Перевірити!" onClick="selectDate()">
+</CENTER>
+</TD>
+</TR>
+</FORM>
+<nobr>
+<FORM NAME="calButtons">
+<TR><TD align="center">
+<textarea FONT="Courier" NAME="calPage"  WRAP=no ROWS=9 COLS=22 style="overflow: auto; resize: none; "></textarea>
+</TD></TR></TABLE>
+</FORM></FONT>
+
+</TD><TD width = 50% >
+
+<TABLE CELLPADDING=2 CELLSPACING=2 BORDER=1>
+<TR><TD>
+<CENTER>Правила користування календарем :<br>
+        ---------------------------------<br> 
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="На наступний рік.        " onClick="setNextYear()"><br> 
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="На попередній рік.       " onClick="setPreviousYear()" ><br><br>
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="На наступний місяць.     " onClick="setNextMonth()"><br>
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="На попередній місяць.    " onClick="setPreviousMonth()"><br><br>
+<INPUT TYPE=BUTTON NAME="previousYear" VALUE="На поточні місяць та рік." onClick="setToday()"><br>
+Ви можете ввести який завгодно рік, <br>а потім перевірити цю дату.<br>
+</CENTER></TD></TR>
+</TABLE>
+</TD></TR></TABLE><br>
+<div align = center><a href="ns_cal_god.html" target = _blank title = " "><font color = #000000 ><strong>Повний календар на всі місяці поточного року.</strong></font></a></div>
+<!> 
+     <div  align = center >
+<font color = black >
+<? echo $sape->return_links(); ?>
+<br>
+<?php
+require_once ($_SERVER['DOCUMENT_ROOT'].'/setlinks_68fec/slsimple.php');
+?>
+</font>
+<!>
+</div> 
+
+</body>
+</html> 
+

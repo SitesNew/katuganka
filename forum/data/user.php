@@ -1,0 +1,1 @@
+<?die;?> rn|time|name|password|zvezda|email|pol|drdate|delta_gmt|user_skin|icq|url|gorod|interes|sign|avatar|activation|

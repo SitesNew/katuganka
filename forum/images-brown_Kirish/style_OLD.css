@@ -1,0 +1,86 @@
+body {background: #DFCBB7; color: #000000; font: 12px Verdana,Arial,Helvetica,sans-serif; margin: 6px; padding: 0; scrollbar-3dlight-color: #D08B62; scrollbar-arrow-color: #885428; scrollbar-darkshadow-color: #A8663E; scrollbar-face-color: #CD9878; scrollbar-highlight-color: #E6D0C1; scrollbar-shadow-color:#E8D9BF; scrollbar-track-color: #E8D9BF}
+font { font: 10px Verdana,Arial,Helvetica,sans-serif }
+th,td,p { font: 12px Verdana,Arial,Helvetica,sans-serif }
+.gensmall { font-size: 10px }
+td.genmed,.genmed { font-size:11px }
+.explaintitle {
+	font-size: 11px;
+	font-weight: bold;
+	color: #9A5F32
+}
+a:link,a:active,a:visited,a.postlink {
+	color: #734526;
+	text-decoration: none
+}
+a:hover {
+	color: #FF6633;
+	text-decoration: underline
+}
+.topictitle {font-size: 11px; font-weight: bold}
+a.topictitle:visited {
+	color: #BB6237
+}
+a.topictitle:hover {
+	color: #FF6600
+}
+.name {font-size: 11px; font-weight: bold}
+hr {border: 0px solid #CB7134;border-top-width:1px;height:0px}
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {font-weight: bold; letter-spacing: 1px; background: #D9986C url(cellpic1.gif);
+height: 29px; text-indent: 4px }
+.row1 { background: #E8DDD2 }
+.row2,.helpline { background: #D2BEAA }
+.row3 { background: #E8DDD2 }
+td.spaceRow { background: #eeddd9 }
+td.rowpic { background: #eeddd9 url(cellpic2.jpg) repeat-y }
+th {
+	background: #B68B52 url(cellpic3.gif);
+	color: #ECDED7;
+	font-size: 11px;
+	font-weight: bold;
+	height: 27px;
+	white-space: nowrap;
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px
+}
+.bodyline { background: #EFE7DA; border: 1px solid #996600 }
+.forumline { background:#ffffff; border: 1px solid #996600 }
+.maintitle,h1 {
+	font: bold 20px/120% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif;
+	text-decoration: none;
+	color: #CC9933
+}
+.subtitle,h2 { font: bold 18px/180% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; text-decoration: none}
+.nav { font-size: 11px; font-weight: bold }
+.postbody { font-size: 12px; line-height: 125% }
+.postdetails {
+	font-size: 10px;
+	color: #996633
+}
+.quote { background: #fafafa; border: 1px solid #805C40; color: #444444; font-size: 11px; line-height: 125% }
+.code { background: #fafafa; border: 1px solid #805C40; color: #553900; font: 12px Courier,"Courier New",sans-serif; padding: 5px }
+form { display: inline }
+input { font: 11px Verdana,Arial,Helvetica,sans-serif }
+select { background: #ffffff; font: 11px Verdana,Arial,Helvetica,sans-serif }
+input.post,textarea.post { background: #ffffff; border: 1px solid #000000; font: 11px Verdana,Arial,Helvetica,sans-serif; padding-bottom: 2px; padding-left: 2px}
+input.button,input.liteoption,.fakebut {border: 1px solid #000000; background: #fafafa; font-size: 11px}
+input.catbutton {border: 1px solid #000000; background: #fafafa; font-size:10px}
+input.mainoption {border: 1px solid #000000; background: #fafafa; font-size: 11px; font-weight: bold}
+a.but,a.but:hover,a.but:visited { color: #000000; text-decoration: none }
+.helpline { border: 0 solid; font-size: 10px }
+.topbkg { background: #ECE0CE url(cellpic_bkg.jpg) repeat-x }
+.topnav { font-size: 10px; background: #ECE0CE url(cellpic_nav.gif) repeat-x; color: #FF6600; height: 21px; white-space: nowrap; border: 0px solid #996633; border-width: 1px 0px 1px 0px }
+.admin,.mod { font-size: 11px; font-weight: bold }
+.admin,a.admin,a.admin:visited { color: #ffa34f }
+.mod,a.mod,a.mod:visited { color: #660000 }
+a.admin:hover,a.mod:hover { color: #dd6900 }
+.imgtopic,.imgicon { margin-left: 3px }
+.imgspace { margin-left: 1px; margin-right: 2px }
+.imgfolder { margin: 1px 4px 1px 4px }
+img { border: 0 solid }
+.copyright { font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; font-size: 10px; letter-spacing: -1px;}
+a.copyright { color: #000000; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+.code_td,.php_td,.q_td,.quote_td { color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 11px;}
+.code_table,.php_table,.q_table,.quote_table { border: 1px solid #00aa01; font-family: Verdana, Arial, Helvetica; font-size: 11px; width: 95%}

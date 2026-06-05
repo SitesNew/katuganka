@@ -1,0 +1,13 @@
+﻿       A:link      {font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;} 
+       A:visited   {font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;} 
+       A:hover     {font-family:  "Verdana", "Tahoma","Arial"; color: red;       font-weight: normal; font-size: 10pt;  text-decoration: underline; background:#ffffff;} 
+       A:active    {font-family:  "Verdana", "Tahoma","Arial"; color: green;     font-weight: normal; font-size: 10pt;  text-decoration: none}
+
+       Li.Normal   {font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;}
+       Li.Selected {font-family:  "Verdana", "Tahoma","Arial"; color: blue;      font-weight: normal; font-size: 10pt;  text-decoration: none;      background:#93c9ff;}
+               body{font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;
+                      background-color: #ccffff; margin-left: 0pt; margin-right: 0pt; margin-top: 0pt; margin-bottom: 0pt}
+
+       td.normal   {font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;      background: #ccffff;}                                   
+       td.selected {font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;      background: #93c9ff;} 
+                  p{font-family:  "Verdana", "Tahoma","Arial"; color: #000000;   font-weight: normal; font-size: 10pt;  text-decoration: none;} 

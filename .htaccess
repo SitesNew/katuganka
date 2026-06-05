@@ -1,0 +1,61 @@
+# ======================================================================
+# ИДЕАЛЬНЫЙ УНИВЕРСАЛЬНЫЙ .HTACCESS ДЛЯ СТАТИЧЕСКИХ САЙТОВ
+# Подходит для любого домена без редактирования кода.
+# Важно: Сохранять строго в кодировке "UTF-8 БЕЗ BOM"
+# ======================================================================
+
+# ----------------------------------------------------------------------
+# 1. СЖАТИЕ ФАЙЛОВ (GZIP)
+# Существенно ускоряет загрузку, сжимая текстовые файлы перед отправкой
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 2. БРАУЗЕРНОЕ КЭШИРОВАНИЕ (Expires Headers)
+# Заставляет браузер сохранять картинки и стили, чтобы сайт открывался мгновенно
+# ----------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Кэш по умолчанию — 1 месяц
+    ExpiresDefault "access plus 1 month"
+    
+    # HTML-страницы кэшируем всего на 1 день (чтобы быстро появлялись обновления)
+    ExpiresByType text/html "access plus 1 day"
+    
+    # Стили, скрипты и шрифты (редко меняются — кэш на 1 год)
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    
+    # Картинки и иконки (кэш на 1 год)
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# 3. БЕЗОПАСНОСТЬ
+# Запрещает пользователям просматривать содержимое папок списком
+# ----------------------------------------------------------------------
+Options -Indexes
+
+# ----------------------------------------------------------------------
+# 4. УНИВЕРСАЛЬНЫЕ РЕДИРЕКТЫ (Авто-настройка HTTPS и БЕЗ www)
+# Автоматически определяет текущий домен сайта и склеивает зеркала
+# ----------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Шаг А: Если в адресе есть WWW — убираем его (для любого домена)
+    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+    
+    # Шаг Б: Если сайт открыт по HTTP — принудительно переключаем на HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>

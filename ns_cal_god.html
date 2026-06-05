@@ -1,0 +1,135 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"">
+   <title> Повний календар на поточний рік. </title>
+   <meta name="title" content="Повний календар на поточний рік. ">
+   <meta name="author" content="Валентин Приходько">
+   <meta name="keywords"       content="Повний календар на поточний рік."> 
+   <meta http-equiv="keywords" content="Повний календар на поточний рік.">
+   <meta name="robots" content="index,follow">
+   <meta name="description"    content="Повний календар на поточний рік.">
+   <meta name="copyright" content=" Copyright © 2015 - 2016 г.  , all rights reserved.">
+   <meta name="document-state" content="dynamic">
+   <meta name="revisit-after" content="1 days">
+   <meta name="classification" content="Повний календар на поточний рік.">
+   <meta name="category" content="Повний календар на поточний рік.">
+   <meta http-equiv="language" content="russian">
+   <meta name="rating" content="general">
+   <meta name="distribution" content="global">
+   <meta name="resourse-type" content="document">
+<!>
+
+
+<body>
+<CENTER>
+     <div align = center>
+          <Script language="JavaScript">
+                  var now = new Date();
+                  var days = new Array(' Неділя ',' Понеділок ',' Вівторок ',' Середа ',' Четвер ',' Пятниця ',' Субота ');
+                  var months = new Array(' Січня ',' Лютого ',' Березня ',' Квітня ',' Травня ',' Червня ',' Липня ',' Серпня ',' Вересня ',' Жовтня  ',' Листопада ',' Грудня ');
+                  var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                  function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                  today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " року ";
+                  document.write("<font color = #000000 ><strong>"+" Поточний  день : "+today+ ".&nbsp;"+"</strong></font>");
+          </script>
+     </div>
+<!>  
+<div  align = center >
+<font color = black >
+<?php
+     if (!defined('_SAPE_USER')){
+        define('_SAPE_USER', 'f564309f61693f5895513c7f6a52c461');
+     }
+     require_once(realpath($_SERVER['DOCUMENT_ROOT'].'/'._SAPE_USER.'/sape.php'));
+     $sape = new SAPE_client();
+?>
+<? echo $sape->return_links(2); ?>
+</font>
+</div> 
+<!>
+
+<center>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function day_title(day_name){
+document.write("<TD ALIGN=center WIDTH=35>"+day_name+"</TD>")
+}
+function fill_table(month,month_length) {
+day=1
+document.write("<TABLE BORDER=3 CELLSPACING=3 CELLPADDING=%3 WIDTH = 50% ><TR>")
+document.write("<TD COLSPAN=7 ALIGN=center><B>"+month+" "+year+"</B><TR>")
+day_title("Нд.")
+day_title("Пн.")
+day_title("Вт.")
+day_title("Ср.")
+day_title("Чт.")
+day_title("Пт.")
+day_title("Сб.")
+document.write("</TR><TR>")
+for (var i=1;i<start_day;i++) {
+document.write("<TD>")
+}
+for (var i=start_day;i<8;i++) {
+document.write("<TD ALIGN=center>"+day+"</TD>")
+day++}
+document.write("<TR>")
+while (day <= month_length) {
+for (var i=1;i<=7 && day<=month_length;i++) {
+document.write("<TD ALIGN=center>"+day+"</TD>")
+day++
+}
+document.write("</TR><TR>")
+start_day=i
+}
+document.write("</TR></TABLE><BR>")
+}
+// End -->
+</script>
+ 
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+today = new Date();
+year = today.getYear();
+if (year < 2000) // Y2K Fix, Isaac Powell
+year = year + 1900; // http://onyx.idbsu.edu/~ipowell
+today= new Date("January 1, "+year)
+start_day = today.getDay() + 1 
+fill_table("Січень",31)
+
+if (((year % 4)==0) && ((year % 100)!=0) || ((year % 400)==0)) 
+{ fill_table("Лютий", 29); }
+else { fill_table("Лютий", 28); }
+
+fill_table("Березень",31)
+fill_table("Квітень",30)
+fill_table("Травень",31)
+fill_table("Червень",30)
+fill_table("Липень",31)
+fill_table("Серпень",31)
+fill_table("Вересень",30)
+fill_table("Жовтень",31)
+fill_table("Листопад",30)
+fill_table("Грудень",31)
+</SCRIPT> 
+
+<!>
+     <div  align = center >
+<font color = black >
+<? echo $sape->return_links(); ?>
+<br>
+<?php
+require_once ($_SERVER['DOCUMENT_ROOT'].'/setlinks_68fec/slsimple.php');
+?>
+</font>
+<!>
+</body> 
+
+ 
+

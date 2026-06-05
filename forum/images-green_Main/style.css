@@ -1,0 +1,110 @@
+body {background: #f2f8eb; color: #000000; font: 14px Verdana,Arial,Helvetica,sans-serif; margin: 6px; padding: 0; scrollbar-3dlight-color: #bddd9c; scrollbar-arrow-color: #008000; scrollbar-darkshadow-color: #00aa01; scrollbar-face-color: #8cd391; scrollbar-highlight-color: #c4fac5; scrollbar-shadow-color:#dfeece; scrollbar-track-color: #d8f9db}
+font { font: 13px Verdana,Arial,Helvetica,sans-serif }
+th,td,p { font: 14px Verdana,Arial,Helvetica,sans-serif }
+.gensmall { font-size: 13px }
+td.genmed,.genmed { font-size:13px }
+.explaintitle { font-size: 13px; font-weight: bold; color: #339965 }
+a:link,a:active,a:visited,a.postlink {color: #1d7148; text-decoration: none}
+a:hover {color: #dd6900; text-decoration: underline}
+.topictitle {font-size: 13px; font-weight: bold}
+a.topictitle:visited {color: #238e59}
+a.topictitle:hover {color: #dd6900}
+.name {font-size: 13px; font-weight: bold}
+hr {border: 0px solid #8ed592;border-top-width:1px;height:0px}
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom {font-weight: bold; letter-spacing: 1px; background: #a8e3a5 url(cellpic1.gif);
+height: 29px; text-indent: 4px }
+.row1 { background: #ebfaed }
+.row2,.helpline { background: #defae0 }
+.row3 { background: #d1fad5 }
+td.spaceRow { background: #c5f9c6 }
+td.rowpic { background: #daf5d2 url(cellpic2.jpg) repeat-y }
+th { background: #8fda90 url(cellpic3.gif); color: #cff2e1; font-size: 13px;
+font-weight: bold; height: 27px; white-space: nowrap; text-align: center; padding-left: 8px; padding-right: 8px}
+.bodyline { background: #ebfaed; border: 1px solid #339965 }
+.forumline { background:#ffffff; border: 1px solid #009301 }
+.maintitle,h1 { font: bold 20px/120% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; text-decoration: none; color: #8ed592}
+.subtitle,h2 { font: bold 18px/180% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; text-decoration: none}
+.nav { font-size: 13px; font-weight: bold }
+.postbody { font-size: 14px; line-height: 125% }
+.postdetails { font-size: 13px; color: #339965 }
+.quote { background: #fafafa; border: 1px solid #64842a; color: #444444; font-size: 13px; line-height: 125% }
+.code { background: #fafafa; border: 1px solid #009301; color: #006600; font: 13px Courier,"Courier New",sans-serif; padding: 5px }
+form { display: inline }
+input { font: 13px Verdana,Arial,Helvetica,sans-serif; padding: 2px 7px;}
+select { background: #ffffff; font: 13px Verdana,Arial,Helvetica,sans-serif }
+input.post,textarea.post { background: #ffffff; border: 1px solid #000000; font: 14px Verdana,Arial,Helvetica,sans-serif; padding-bottom: 2px; padding-left: 2px}
+input.button,input.liteoption,.fakebut {border: 1px solid #000000; background: #fafafa; font-size: 13px}
+input.catbutton {border: 1px solid #000000; background: #fafafa; font-size:13px}
+input.mainoption {border: 1px solid #000000; background: #fafafa; font-size: 13px; font-weight: bold}
+a.but,a.but:hover,a.but:visited { color: #000000; text-decoration: none }
+.helpline { border: 0 solid; font-size: 13px }
+.topbkg { background: #daf6dd url(cellpic_bkg.jpg) repeat-x }
+.topnav { font-size: 13px; background: #daf6dd url(cellpic_nav.gif) repeat-x; color: #dd6900; height: 21px; white-space: nowrap; border: 0px solid #279a62; border-width: 1px 0px 1px 0px }
+.admin,.mod { font-size: 13px; font-weight: bold }
+.admin,a.admin,a.admin:visited { color: #ffa34f }
+.mod,a.mod,a.mod:visited { color: #660000 }
+a.admin:hover,a.mod:hover { color: #dd6900 }
+.imgtopic,.imgicon { margin-left: 3px }
+.imgspace { margin-left: 1px; margin-right: 2px }
+.imgfolder { margin: 1px 4px 1px 4px }
+img { border: 0 solid }
+.copyright { font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; font-size: 12px; letter-spacing: -1px;}
+a.copyright { color: #000000; text-decoration: none;}
+a.copyright:hover { color: #000000; text-decoration: underline;}
+
+.code_td,.php_td,.q_td,.quote_td { color: #000000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px;}
+.code_table,.php_table,.q_table,.quote_table { border: 1px solid #00aa01; font-family: Verdana, Arial, Helvetica; font-size: 13px; width: 95%}
+
+
+
+
+
+/* Здесь ниже задаётся стиль для ссылок - все ссылки в квадратиках обведённых нежным оттенком основного цвета */
+.pgbutt a {font-family: Verdana; padding-top:2px;padding-bottom:2px;
+text-decoration: none; border: 1px #008800 solid; background: #defae0; padding:1px 4px 1px 4px; margin: 5px 1 0 0;
+ -moz-border-radius: 4px;
+ -khtml-border-radius: 4px;
+ -webkit-border-radius: 4px;
+ border-radius: 4px;}
+ 
+
+ 
+
+/* СТИЛИ для скрипта форума WR-Forum Professional версии 2.2 с 2019 года */
+
+/* 1) ИЗМЕНЕНИЕ ИМЕЮЩЕГОСЯ СТИЛЯ */
+input.button,input.liteoption,.fakebut {border: 1px solid #000000; background: #fafafa; font-size: 13px; font-weight:bold;}
+
+/* 2) QR-CODE */
+#qr img{width:35px;height:35px;position: fixed;right: 10px;top: 10px;border: 1px solid #666;padding: 1px;background-color: white;}
+#qr img:hover{width:200px;height:200px;z-index:100;padding: 2px;}
+
+/* 3) Если нет аватара добавляем ЧУДО КВАДРАТ с первой буквой логина. border-radius 100% - это круг */
+.guestavatar{width:120px;height:120px;text-align:center;background: #FFDEAD;color: #4E5754;font-size: 50px;
+display: table-cell;border-radius: 20%;position: relative;vertical-align: middle;}
+
+/* 4) навигационное МЕНЮ В АДМИНКЕ */
+#nav8, #nav8 ul, #nav8 li {margin: 0;padding: 0;border: 0;}
+#nav8, #nav8 ul {background: #defae0;}
+#nav8 {border-spacing: 0 0;position: relative;z-index: 50;width: 100%;}
+#nav8 ul {position: absolute;display: none;}
+#nav8 td:hover ul {display: block;}
+#nav8 ul li {list-style: none;}
+#nav8 .right {direction: rtl;}
+#nav8 .right ul {right: 0;}
+#nav8 .right li {direction: ltr;}
+#nav8 a {display: block;padding: 7px 0;text-align: center;text-decoration: none;}
+#nav8 ul a {padding: 7px 15px;text-align: left;}
+#nav8 td:hover, #nav8 li:hover {background: #aefaa0;}
+#nav8 td {text-align: center;}
+
+/* 5) Стиль для блока загрузки - ДАЛЕЕ >>> */
+#cssbar-wrapper {width:300px; height:19px; position:absolute; left:50%;}
+#cssbar-border {border:3px solid rgb(8,134,4); height:100%; width:100%; position:relative; left:-50%; top:-50%; padding:4px 3px;}
+#cssbar-whitespace {overflow:hidden; height:100%; width:100%; margin:0 auto; overflow:hidden; position:relative;}
+#cssbar-line {background-color:rgb(8,134,4); position:absolute; height:100%; width:100%; animation:cssbar-slide 4s steps(40) infinite;
+ -o-animation:cssbar-slide 4s steps(40) infinite; -ms-animation:cssbar-slide 4s steps(40) infinite;
+ -webkit-animation:cssbar-slide 4s steps(40) infinite; -moz-animation:cssbar-slide 4s steps(40) infinite;}
+@keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-o-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-ms-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-webkit-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-moz-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}

@@ -1,0 +1,149 @@
+.code_td {FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;}
+.php_td {FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;}
+.q_td {FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;}
+.quote_td {FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif}
+.code_table {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 13px; BORDER-LEFT: #999999 1px solid; WIDTH: 95%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica}
+.php_table {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 13px; BORDER-LEFT: #999999 1px solid; WIDTH: 95%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica}
+.q_table {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 13px; BORDER-LEFT: #999999 1px solid; WIDTH: 95%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica}
+.quote_table {BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 13px; BORDER-LEFT: #999999 1px solid; WIDTH: 95%; BORDER-BOTTOM: #999999 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica}
+
+
+BODY {FONT-SIZE: 14px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; SCROLLBAR-FACE-COLOR: #e2e2e2; BACKGROUND: #f1f1f1; PADDING-BOTTOM: 0px; MARGIN: 6px; FONT: 12px Verdana,Arial,Helvetica,sans-serif; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #e6e6e6; COLOR: #333333; SCROLLBAR-3DLIGHT-COLOR: #c2c2c2; SCROLLBAR-ARROW-COLOR: #666666; PADDING-TOP: 0px; SCROLLBAR-TRACK-COLOR: #f1f1f1; SCROLLBAR-DARKSHADOW-COLOR: #c2c2c2}
+FONT {FONT: 14px Verdana,Arial,Helvetica,sans-serif}
+TH {FONT: 14px Verdana,Arial,Helvetica,sans-serif}
+TD {FONT: 14px Verdana,Arial,Helvetica,sans-serif}
+P {FONT: 13px Verdana,Arial,Helvetica,sans-serif}
+
+.gensmall {FONT-SIZE: 13px}
+TD.genmed {FONT-SIZE: 13px}
+.genmed {FONT-SIZE: 12px}
+.explaintitle {FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #999999}
+
+
+A:link {COLOR: #000000; TEXT-DECORATION: none}
+A:active {COLOR: #000000; TEXT-DECORATION: none}
+A:visited {COLOR: #000000; TEXT-DECORATION: none}
+A:hover {COLOR: #999999; TEXT-DECORATION: underline}
+
+A.postlink {COLOR: #000000; TEXT-DECORATION: none}
+
+.topictitle {FONT-WEIGHT: bold; FONT-SIZE: 13px}
+A.topictitle:visited {COLOR: #262626}
+A.topictitle:hover {COLOR: #999999}
+
+.name {FONT-WEIGHT: bold; FONT-SIZE: 13px}
+HR {BORDER-RIGHT: #ffffff 0px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 0px solid; BORDER-BOTTOM: #ffffff 0px solid; HEIGHT: 0px}
+TD.cat {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+TD.catHead {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+TD.catSides {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+TD.catLeft {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+TD.catRight {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+TD.catBottom {FONT-WEIGHT: bold; BACKGROUND: url(cellpic1.gif) #f0f0f0; TEXT-INDENT: 4px; LETTER-SPACING: 1px; HEIGHT: 29px}
+
+.row1 {BACKGROUND: #efefef}
+.row2 {BACKGROUND: #e2e2e2}
+.row3 {BACKGROUND: #e9e9e9}
+
+.helpline {BACKGROUND: #e2e2e2}
+
+TD.spacerow {BACKGROUND: #dbdbdb}
+TD.rowpic {BACKGROUND: url(cellpic2.jpg) #f0f0f0 repeat-y;}
+TH {PADDING-RIGHT: 8px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: url(cellpic3.gif) #d0d0d0; COLOR: #666666; WHITE-SPACE: nowrap; HEIGHT: 27px; TEXT-ALIGN: center}
+
+.bodyline {BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BACKGROUND: #f9f9f9; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid}
+.forumline {BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; BACKGROUND: #ffffff; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid}
+.maintitle {FONT: bold 20px/120% Verdana,Arial,Helvetica,sans-serif; COLOR: #999999; TEXT-DECORATION: none}
+
+H1 {FONT: bold 20px/120% Verdana,Arial,Helvetica,sans-serif; COLOR: #999999; TEXT-DECORATION: none}
+H2 {FONT: bold 18px/180% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; TEXT-DECORATION: none}
+
+.subtitle {FONT: bold 18px/180% "Trebuchet MS",Verdana,Arial,Helvetica,sans-serif; TEXT-DECORATION: none}
+
+.nav {FONT-WEIGHT: bold; FONT-SIZE: 13px}
+.postbody {FONT-SIZE: 14px; LINE-HEIGHT: 125%}
+.postdetails {FONT-SIZE: 13px; COLOR: #666666}
+.quote {BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #666666 1px solid; COLOR: #444444; LINE-HEIGHT: 125%; BORDER-BOTTOM: #666666 1px solid}
+.code {BORDER-RIGHT: #666666 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #666666 1px solid; PADDING-LEFT: 5px; BACKGROUND: #fafafa; PADDING-BOTTOM: 5px; FONT: 12px Courier,sans-serif; BORDER-LEFT: #666666 1px solid; COLOR: #006600; PADDING-TOP: 5px; BORDER-BOTTOM: #666666 1px solid}
+.errorline {BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; BACKGROUND: #999999; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid}
+
+FORM {DISPLAY: inline}
+INPUT {FONT: 11px Verdana,Arial,Helvetica,sans-serif}
+SELECT {BACKGROUND: #ffffff; FONT: 11px Verdana,Arial,Helvetica,sans-serif}
+INPUT.post {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 2px; BACKGROUND: #ffffff; PADDING-BOTTOM: 2px; FONT: 11px Verdana,Arial,Helvetica; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+TEXTAREA.post {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; PADDING-LEFT: 2px; BACKGROUND: #ffffff; PADDING-BOTTOM: 2px; FONT: 11px Verdana,Arial,Helvetica; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+INPUT.button {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+INPUT.liteoption {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+
+.fakebut {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+INPUT.catbutton {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+INPUT.mainoption {BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 13px; BACKGROUND: #fafafa; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid}
+
+A.but {COLOR: #000000; TEXT-DECORATION: none}
+A.but:hover {COLOR: #000000; TEXT-DECORATION: none}
+A.but:visited {COLOR: #000000; TEXT-DECORATION: none}
+.helpline {BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; FONT-SIZE: 13px; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+.topbkg {BACKGROUND: url(cellpic_bkg.jpg) #efefef repeat-x}
+.topnav {BORDER-RIGHT: #999999 0px solid; BORDER-TOP: #999999 1px solid; FONT-SIZE: 13px; BACKGROUND: url(cellpic_nav.gif) #eeeeee repeat-x; BORDER-LEFT: #999999 0px solid; COLOR: #999999; BORDER-BOTTOM: #999999 1px solid; WHITE-SPACE: nowrap; HEIGHT: 21px}
+.admin {FONT-WEIGHT: bold; FONT-SIZE: 13px}
+.mod {FONT-WEIGHT: bold; FONT-SIZE: 13px}
+.admin {COLOR: #ffa34f}
+A.admin {COLOR: #ffa34f}
+A.admin:visited {COLOR: #ffa34f}
+.mod {COLOR: #006600}
+A.mod {COLOR: #006600}
+A.mod:visited {COLOR: #006600}
+A.admin:hover {COLOR: #dd6900}
+A.mod:hover {COLOR: #dd6900}
+IMG {BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+.copyright {FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px}
+A.copyright {COLOR: #000000; TEXT-DECORATION: none}
+A.copyright:hover {COLOR: #000000; TEXT-DECORATION: underline}
+
+
+
+/* СТИЛИ для скрипта форума WR-Forum Professional версии 2.2 с 2019 года */
+
+/* 1) ИЗМЕНЕНИЕ ИМЕЮЩЕГОСЯ СТИЛЯ */
+/* Здесь ниже задаётся стиль для ссылок - все ссылки в квадратиках обведённых нежным оттенком основного цвета */
+.pgbutt a {font-family: Verdana; padding-top:2px;padding-bottom:2px;
+text-decoration: none; border: 1px #888888 solid; background: #f1f1f1; padding:1px 4px 1px 4px; margin: 5px 1 0 0;
+ -moz-border-radius: 4px;
+ -khtml-border-radius: 4px;
+ -webkit-border-radius: 4px;
+ border-radius: 4px;}
+ 
+input.button,input.liteoption,.fakebut {border: 1px solid #000000; background: #EAEFF4; font-size: 13px; font-weight:bold;}
+
+/* 2) QR-CODE */
+#qr img{width:35px;height:35px;position: fixed;right: 10px;top: 10px;border: 1px solid #666;padding: 1px;background-color: white;}
+#qr img:hover{width:200px;height:200px;z-index:100;padding: 2px;}
+
+/* 3) Если нет аватара добавляем ЧУДО КВАДРАТ с первой буквой логина. border-radius 100% - это круг */
+.guestavatar{width:120px;height:120px;text-align:center;background: #FFDEAD;color: #4E5754;font-size: 50px;
+display: table-cell;border-radius: 20%;position: relative;vertical-align: middle;}
+
+/* 4) навигационное МЕНЮ В АДМИНКЕ */
+#nav8, #nav8 ul, #nav8 li {margin: 0;padding: 0;border: 0;}
+#nav8, #nav8 ul {background: #f1f1f1;}
+#nav8 {border-spacing: 0 0;position: relative;z-index: 50;width: 100%;}
+#nav8 ul {position: absolute;display: none;}
+#nav8 td:hover ul {display: block;}
+#nav8 ul li {list-style: none;}
+#nav8 .right {direction: rtl;}
+#nav8 .right ul {right: 0;}
+#nav8 .right li {direction: ltr;}
+#nav8 a {display: block;padding: 7px 0;text-align: center;text-decoration: none;}
+#nav8 ul a {padding: 7px 15px;text-align: left;}
+#nav8 td:hover, #nav8 li:hover {background: #dddddd;}
+#nav8 td {text-align: center;}
+
+/* 5) Стиль для блока загрузки - ДАЛЕЕ >>> */
+#cssbar-wrapper {width:300px; height:19px; position:absolute; left:50%;}
+#cssbar-border {border:3px solid rgb(34,44,50); height:100%; width:100%; position:relative; left:-50%; top:-50%; padding:4px 3px;}
+#cssbar-whitespace {overflow:hidden; height:100%; width:100%; margin:0 auto; overflow:hidden; position:relative;}
+#cssbar-line {background-color:rgb(34,44,50); position:absolute; height:100%; width:100%; animation:cssbar-slide 4s steps(40) infinite;
+ -o-animation:cssbar-slide 4s steps(40) infinite; -ms-animation:cssbar-slide 4s steps(40) infinite;
+ -webkit-animation:cssbar-slide 4s steps(40) infinite; -moz-animation:cssbar-slide 4s steps(40) infinite;}
+@keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-o-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-ms-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}} @-webkit-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}
+@-moz-keyframes cssbar-slide {0% {left:-100%;} 100% {left:100%;}}

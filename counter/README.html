@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>WR-Counter - версия 1.5</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ru">
+<META name="description" content="Описание счётчика на PHP. WR-Counter - Счётчик со статистикой.">
+<META name="keywords" content="WR-Counter, скрипт счётчика, скрипты, php-скрипт, Счётчик со статистикой">
+<meta name="Resource-type" content="document">
+<meta name="Robots" content="index,follow">
+<style>
+body {background-color: #FFF; margin: 0px; padding: 0px;}
+body {scrollbar-arrow-color: #3B88C5; scrollbar-face-color: #FFFFFF; scrollbar-track-color: #E0E0E0; scrollbar-highlight-color: #FFFFFF; scrollbar-3dlight-color: #C0C0C0; scrollbar-shadow-color: #FFFFFF; scrollbar-darkshadow-color: #B0B0B0;}
+font,th,td,p {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
+a {text-decoration: underline; color: #3B88C5;}
+a:visited {text-decoration: underline; color: #3279B2;}
+a:hover, a:active {text-decoration: underline; color: #FF9C00;}
+hr {height: 0px; border: solid #3888C7 0px; border-top-width: 1px;}
+td.row2 {background-color: #FFF;}
+table.forumline {background-color: #FFBE7D;}
+table.forumline:hover {background-color: #B0B0B0;}
+.mainfont {COLOR:#882D00; TEXT-DECORATION:none}
+</style>
+</head>
+
+<body bgcolor="#E5E5E5" text="#000000" link="#006699" vlink="#5493B4">
+
+<table width=80% cellspacing=0 cellpadding=10 align=center><tr><td class=bodyline>
+
+<table width=100% cellspacing=0 cellpadding=0><tr><td align="center" width="100%" valign="middle"><span class="maintitle"><h3>WR-Counter &copy; версия 1.5</h3></span></td></tr></table>
+
+<table width=100% cellpadding=4 cellspacing=2 class=forumline>
+
+<tr><th width=100% colspan=2 class=thCornerL height=25 nowrap=nowrap><font class="mainfont">:: <b>Назначение скрипта</b> ::</font></th></tr>
+
+<tr><td width=100% class=row2 valign=middle>
+<B>WR-Counter - Скрипт графического счётчика с простой статистикой</B>. Показывает хиты и хосты за день, общее количество посещений с момента установки счётчика.
+Имеется <B>подробная статистика посещения страниц по дням</B>. Период, за который хранится статистика настраивается. <B>Старые данные - автоматически удаляются.</B>
+<B>Счётчик в качестве БД использует файлы</B>. Простая структура данных позволяет легко и быстро установить/перенести скрипт без потери данных в любую папку как на сервере, так и на другой сайт. Размер скрипта: <B>74 Кб</B>.<BR>
+Пример: <a href="https://www.wr-script.ru/counter/info.php" title="Скрипт счётчика">Статистика посещений сайта WR-Скрипт.РУ</a>.</td></tr>
+
+<tr><th width=100% colspan=2class=thCornerL height=25 nowrap=nowrap><font class="mainfont">:: <b>Возможности</b> ::</font></th></tr>
+
+<tr><td width=100% class=row2 valign=middle>
+- <B>подсчёт хитов/хостов за сутки</B>;<BR>
+- <B>вывод статистики</B> по датам посещения за прошедшие N суток;
+- доступ к статистике по просмотренным страницам за каждый день, отметка выходных дней;<BR>
+- наличие фильтра по страницам;<br>
+<center><B>Админитерфейс с возможностью:</B><BR></center>
+- <B>выбор рисунка счётчика</B> из 8-и PNG-шаблонов, входящих в комплект;<BR>
+- <B>настройка цвета цифр</B>, отображающихся на счётчике;<BR>
+- возможность <B>отправлять на емайл статистику</B> с выбором периодичности <B>рассылки статистики</B> посещений админу;<BR>
+- <B>экспорта данных статистики</B> в Excel / Calc в csv-формате;<BR>
+- выбор как отображать <B>статистику (горизонтально/вертикально)</B>;<BR>
+- <B>надежный способ аутентификации</B> администратора c применением шифрование MD5 с ключом.<br>
+<HR size=-1>
+Изменения в новой версии:<br>
+- добавлен экспорт результатов в Excel / Calc;<BR>
+- сгруппированы данные по браузерам;<BR>
+- добавлен просмотр посещения по часам в течение суток;<BR>
+- добавлена возжможность смотреть статистику по посещаемым страницам за месяц(период);<BR>
+- добавлена колонка указывающая на среднее количество хитов и хостов за период;<BR>
+- В функцию определения ОПЕРАЦИОННОЙ СИСТЕМЫ добавлены Android, iPod, iPhone, iPad. Добавлен вывод статистики по ОС в просмотр суточного посещения;<br>
+- Настроена функция определения браузеров. Корректно распознаётся chrome,firefox,safari,opera. Не удаётся "выловить" только яндекс-браузер;<br>
+- Поисковики индексировали страницы типа "нет статистики за указанный период". На такие страницы добавлены JavaScript'ы администратору с сообщением, а поисковой системе передётся заголовок с ошибкой 404. Результат - не индексируются сотни "мусорных" страниц;<br>
+- В блоке просмотра подробной статистики доавлены полоса для удобства просмотра со всеми датами, за которые были посещения;<br>
+</td></tr>
+
+<tr><th width=100% colspan=2 class=thCornerL height=25 nowrap=nowrap><font class="mainfont">:: <b>Установка и использование</b> ::</font></th></tr>
+
+<tr><td width=100% class=row2 valign=middle>
+1. Создайте папку на Вашем сервере, например "<B><font color="FF0000">counter</font></b>". Подключитесь к серверу по FTP и закачайте в эту папку все файлы и каталоги. <BR>
+Выставите ей атрибуты Chmod <B><font color="FF0000">755</b></font><BR>
+Закачивать и настраивать атрибуты скрипта можно менеджером "<B><font color="FF0000">Total Commander</font></b>".(Файл -> Изменить атрибуты). <BR>
+<hr color=#224488 size=-1 width=100%>
+2. Далее указан <B>состав скрипта</B> и <B>права доступа</B>, которые необходимо выставить файлам и папкам:<BR>
+<table width=100% border=1 cellspacing=0 cellpadding=3><tr align=center><td>Файлы / описание</td><td>Права доступа</td></tr><tr><td>
+<li><B><font color="FF0000">index.php</b></font> - пример запуска;</li></td><td rowspan=6 align=center><B><font color=red>755</font></b></td></tr><tr><td>
+<li><B><font color="FF0000">counter.php</b></font> - главная страница счётчика;</li></td></tr><tr><td>
+<li><B><font color="FF0000">info.php</b></font> - информация по суточной посещаемости за ХХ дней;</li></td></tr><tr><td>
+<li><B><font color="FF0000">infomail.php</b></font> - авторассыльщик статистики на емайл админу;</li></td></tr><tr><td>
+<li><B><font color="FF0000">admin.php</b></font> - модуль администратора;</li></td></tr><tr><td>
+<li><B>папка <font color="FF0000">"images"</b></font> - с шаблонами счётчика и инф. рисунками (14 шт.);</li></td></tr><tr><td>
+<li><B><font color="FF0000">README.html</b></font> - этот файл;</li></td><td align=center><B><font color=red>-</font></b></td></tr><tr><td>
+<li><B>папка <font color="FF0000">"data"</b></font> - со статистикой счётчика и файлом конфигурации config.php;</li></td>
+<td align=center><B><font color=red>666 / 777</font></b></td></tr>
+</td></tr></table><BR>
+3. На локалхосте права доступа ставить не нужно. Права необходимо выставлять только на серверах в Интернете. Данные права доступа используются на большинстве серверов.
+В случае, если скрипт не запускается и выводится ошибка <B>"Permise Denied"</B> - скорее всего Вы неверно установили права или что то сделали не так. <BR>
+Можете посмотреть <B><a href="https://www.wr-script.ru/info/upload-and-chmod.php" title="настройка chmod прав доступа">статью по настройке прав доступа</a>.</B></font><BR>
+Если скрипт не заработал, не бойтесь экспериментировать: изменяйте атрибуты <B>каталогов и файлов.</B><BR>
+Иногда, <B>на "сомнительном" хостинге, скрипт запускается с атрибутами 777</B> (вместо 755) и <B>666</B> (вместо 644) для файлов и папок соответственно согласно таблице. <B>Либо 777 для всех файлов.</B><BR>
+<hr color=#224488 size=-1 width=100%>
+4. Попытайтесь запустить скрипт ссылкой такого типа: <B>http://Мой_сайт/counter/index.php</B>.<BR> 
+Для того, чтобы включить счётчик на Вашу страницу, достаточно скопировать код в файле index.php и вставить на любую 
+вашу страницу (php или html). <BR>
+Админпанель запускайте ссылкой вида: <B>http://Мой_сайт/counter/admin.php</B>. Логин и пароль по умолчанию <B>admin</B>.
+<hr color=#224488 size=-1 width=100%>
+5. <B><font color="FF0000">Внимание!</font> Для отображения информации и работы с графикой скрипт использует библиотеку GD версии 2.0.</B>
+Если Ваш сервер не поддерживает эту библиотеку - у вас скрипт работать не будет.<BR>
+для того чтобы узнать, есть ли данная библиотека. Необходимо создать php-файл со следующим содержанием:<BR>
+<center><font color=red>&lt;?php
+phpinfo();
+?&gt; </font></center>
+Запустить его и внимательно поискать сведения о <B>GD-библиотеке.</B> Если есть данные в этой графе
+(указана версия, например <B>2.00.36</B> и выше.), значить, скрипт работать будет.
+<hr color=#224488 size=-1 width=100%>
+6. Ваш отзыв или предложения по модернизации скрипта можете оставлять на форуме.<BR>Если все пункты вы выполнили, а скрипт так и не запустился, ну чтож, 
+заходите на <B><a href="https://www.wr-script.ru/forum/" title="Форум на сайте бесплатных скриптов WR-Скрипт.РУ">форум по WR-Скриптам</a></B>
+и в разделе <B>"WR-Script / WR-Counter"</B> просмотрите темы, возможно решение Вашей проблемы уже есть на форуме.
+Если нет - задавайте вопросы. Постарюсь Вам помочь.
+</td></tr>
+
+<tr><th width=100% colspan=2 class=thCornerL height=25 nowrap=nowrap><font class="mainfont">:: <b>Лицензия</b> ::</font></th></tr>
+
+<tr><td width=100% class=row2 valign=middle>
+А) Пользоваться <B>WR-Counter &copy; можно абсолютно бесплатно при выполнении следующих условий:</B><BR>
+&nbsp;&nbsp;&nbsp; 1. Вы не будете выдавать где-либо данный скрипт как свою разработку;<BR>
+&nbsp;&nbsp;&nbsp; 2. <B>Копирайт вида <font size=-2 color="FF0000">Powered by <a href="https://www.wr-script.ru" target="_blank" title="WR-Counter"><font color=#FF0000>WR-Counter</font></a></font> должен присутствовать на страничках статистики и в админке.</B>
+<BR>
+Б) Владельцам сайтов разрешается менять исходный код файлов, но с сохранением копирайтера.<BR>
+В) Приветствуется материальное поощрение автора ;-) Мои реквизиты на главной сайта: <a href="https://www.wr-script.ru" title="WR-Скрипт.РУ">https://www.wr-script.ru</a><BR>
+Г) Друзья, уважайте труд автора - не удаляйте линк внизу страницы на сайт автора. И будет Вам счастье ;-).<BR>
+Д) Всем у кого в счётчике нет ссылки на мой сайт <B>БЕСПЛАТНАЯ поддержка НЕ ОКАЗЫВАЕТСЯ.</B><BR>
+Е) <B>WR-Counter</B> распространяется по принципу "as is" (<B>"как есть"</B>). Это означает, что вы пользуетесь продуктом на свой риск. Автор не дает никаких гарантий и не несет никакой ответственности за возможный ущерб и убытки любого рода.
+</td></tr></table>
+
+<center><small>Powered by <a href="https://www.wr-script.ru/" title="Бесплатные скрипты php" target="_blank">WR-Counter</a> &copy; версия 1.5<br></small>
+
+<pre>
+################################################
+# Разработчик скрипта: WR (Gavrilov Mikhail)   #
+# Имя скрипта: WR-Counter                      #
+# Версия скрипта: 1.5                          #
+# Статус: Бесплатный скрипт                    #
+# Кодировка: UTF-8                             #
+# Требования: PHP 4 - 7, GD-библиотека 2.0     #
+# Дата разработки: 25 ноября 2018 года         #
+# Страница: https://www.wr-script.ru/          #
+# E-mail:   https://www.wr-script.ru/sendmail/ #
+################################################
+</pre>
+
+</body>
+</html>

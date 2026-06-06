@@ -582,12 +582,34 @@ document.write('</SMALL>');
                                  <br>адміністрація ресурсу не претендує на їх авторство і не несе відповідальності  за їх зміст. 
         </div>
         <div align = right ><a  href="#"  target = _top style="color: #006400;"><img src="img/arr_str_top.png"    align=center    alt="На початок сторінки " title " На початок сторінки  "><strong>На початок сторінки</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></div> 
-</footer>
+</footer> 
 <!>  
 <script type="text/javascript" src="js_n/jquery.min.js"></script>
 <script type="text/javascript" src="js_n/navigation.js"></script>
 <!>
 <! ========================================>   
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="5b82b894-4035-4141-bf9d-0b120d542e5a"
+  data-lang="uk"
+  data-page-id=""
+  data-page-url=""
+  data-page-title=""
+  data-theme="light">
+</div>
+
+<script>
+  (function() {
+    const cusdisDiv = document.getElementById('cusdis_thread');
+    if (cusdisDiv) {
+      // Автоматично підтягуємо дані поточної сторінки сайту
+      cusdisDiv.setAttribute('data-page-id', window.location.pathname);
+      cusdisDiv.setAttribute('data-page-url', window.location.href);
+      cusdisDiv.setAttribute('data-page-title', document.title);
+    }
+  })();
+</script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <! ========================================>   
 <!>  

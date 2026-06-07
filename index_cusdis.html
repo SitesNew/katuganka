@@ -591,7 +591,28 @@ document.write('</SMALL>');
 <br><br><hr><br><br>
 <div align = center>Глибокошановні Користувачі ! Запрошую Вас до дискуссії ! Прошу писати Ваші зауваження та побажання Т У Т  !</div>
 <! ========================================>   
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="5b82b894-4035-4141-bf9d-0b120d542e5a"
+  data-lang="uk"
+  data-page-id=""
+  data-page-url=""
+  data-page-title=""
+  data-theme="light">
+</div>
 
+<script>
+  (function() {
+    const cusdisDiv = document.getElementById('cusdis_thread');
+    if (cusdisDiv) {
+      // Автоматично підтягуємо дані поточної сторінки сайту
+      cusdisDiv.setAttribute('data-page-id', window.location.pathname);
+      cusdisDiv.setAttribute('data-page-url', window.location.href);
+      cusdisDiv.setAttribute('data-page-title', document.title);
+    }
+  })();
+</script>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 
 <! ========================================>   
 <br><br><hr><br><br>

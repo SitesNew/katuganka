@@ -1,0 +1,26 @@
+name: Generate XML Sitemap
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Generate Sitemap
+      uses: cicirello/generate-sitemap@v1
+      with:
+        base-url-path: https://sitesnew.github.io/katuganka/
+        drop-html-extension: false
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "sitemap-bot"
+        git config --global user.email "sitemap-bot@example.com"
+        git add sitemap.xml
+        git commit -m "Автоматичне оновлення карти сайту" || exit 0
+        git push

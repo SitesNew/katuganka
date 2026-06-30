@@ -1,0 +1,70 @@
+/* БАЗОВЫЕ НАСТРОЙКИ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #333; line-height: 1.6; padding-bottom: 40px; transition: background-color 0.3s; }
+
+/* ПАСТЕЛЬНЫЕ ГАММЫ ДЛЯ ВСЕЙ СТРАНИЦЫ */
+body.theme-white { background-color: #ffffff; --card-border: #2a5298; --header-bg: #2a5298; }
+body.theme-gray  { background-color: #f2f4f7; --card-border: #4a5568; --header-bg: #4a5568; }
+body.theme-green { background-color: #eef7f2; --card-border: #11998e; --header-bg: #11998e; }
+body.theme-blue  { background-color: #eef5fc; --card-border: #3182ce; --header-bg: #3182ce; }
+
+/* Панель переключателей */
+.theme-switcher { text-align: center; padding: 12px; background: #ffffff; box-shadow: 0 2px 4px rgba(0,0,0,0.04); display: flex; justify-content: center; gap: 12px; align-items: center; border-bottom: 1px solid #e2e8f0; }
+.theme-switcher span { font-weight: 500; font-size: 0.9rem; color: #4a5568; }
+.theme-btn { border: none; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; border: 2px solid #fff; box-shadow: 0 0 3px rgba(0,0,0,0.2); transition: transform 0.2s; }
+.theme-btn:hover { transform: scale(1.15); }
+.btn-white { background: #ffffff; border: 2px solid #cbd5e1; }
+.btn-gray { background: #cbd5e1; }
+.btn-green { background: #a3e635; }
+.btn-blue { background: #93c5fd; }
+
+/* Шапка */
+header { background-color: var(--header-bg); color: #fff; text-align: center; padding: 40px 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: background-color 0.3s; }
+header h1 { font-size: 2.1rem; margin-bottom: 10px; font-weight: 700; }
+header p { font-size: 1.05rem; opacity: 0.9; max-width: 800px; margin: 0 auto; }
+
+/* Главный контейнер */
+.container { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+
+/* Сетка Кафедр */
+.grid-departments { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 25px; margin-bottom: 25px; }
+
+/* Карточка Кафедры */
+.department-card { background: #ffffff; border-radius: 12px; padding: 25px; box-shadow: 0 4px 12px rgba(0,0,0,0.04); border-top: 5px solid var(--card-border); transition: border-color 0.3s; }
+.department-card h2 { font-size: 1.25rem; color: #1a202c; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+
+/* Вертикальные списки */
+.links-list { list-style: none; }
+.links-list li { margin-bottom: 10px; }
+.links-list a { display: block; background: #f8fafc; padding: 12px 15px; border-radius: 8px; color: #4a5568; text-decoration: none; font-weight: 500; border: 1px solid #e2e8f0; transition: all 0.2s; }
+.links-list a:hover { background: #f1f5f9; color: #000; padding-left: 20px; border-color: #cbd5e1; }
+
+/* ГОРИЗОНТАЛЬНЫЙ БЛОК ФИНАНСОВ ПО ЦЕНТРУ */
+.financial-card { margin-bottom: 25px; }
+.links-horizontal { display: flex; flex-direction: column; gap: 12px; justify-content: center; width: 100%; }
+.links-horizontal a { display: block; background: #f8fafc; padding: 14px 20px; border-radius: 8px; color: #4a5568; text-decoration: none; font-weight: 500; border: 1px solid #e2e8f0; text-align: center; transition: all 0.2s; }
+.links-horizontal a:hover { background: #f1f5f9; color: #000; border-color: #cbd5e1; }
+
+@media (min-width: 768px) {
+    .links-horizontal { flex-direction: row; }
+    .links-horizontal a { flex: 1; max-width: 300px; font-size: 0.95rem; }
+}
+
+/* Региональный блок */
+.local-block { background-color: var(--header-bg); color: #fff; border-radius: 12px; padding: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: background-color 0.3s; }
+.local-block h2 { font-size: 1.4rem; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.local-block p { font-size: 1rem; opacity: 0.9; margin-bottom: 20px; }
+.local-buttons { display: flex; flex-wrap: wrap; gap: 15px; }
+.local-buttons a { background: rgba(255,255,255,0.15); color: #fff; padding: 11px 22px; border-radius: 8px; text-decoration: none; font-weight: 600; border: 1px solid rgba(255,255,255,0.25); transition: all 0.2s; }
+.local-buttons a:hover { background: #ffffff; color: #333; }
+
+/* КНОПКА НАВЕРХ */
+.scroll-top-btn { position: fixed; bottom: 25px; right: 25px; background-color: var(--card-border); color: white; border: none; width: 46px; height: 46px; border-radius: 50%; cursor: pointer; display: none; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.15); font-size: 1.1rem; z-index: 1000; transition: background-color 0.3s, transform 0.1s; }
+.scroll-top-btn:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+/* Подвал */
+footer { text-align: center; padding: 30px 20px; margin-top: 40px; background: #2d3748; color: #a0aec0; font-size: 0.85rem; }
+footer p { margin-bottom: 6px; }
+footer a { color: #cbd5e1; text-decoration: none; }
+footer a:hover { color: #fff; text-decoration: underline; }

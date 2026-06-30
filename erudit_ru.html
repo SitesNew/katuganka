@@ -1,0 +1,540 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-Центр Эрудиции и Образования</title>
+    <!-- Подключаем внешний файл стилей -->
+    <link rel="stylesheet" href="erudit_style.css"> 
+	
+</head>
+<body class="theme-white">
+                <div align=right  >
+                      <a href="index.html"          style="font-size:15px;  color:#000000;"  target = _top title= "Главная Страница ">Главная Страница</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="erudit_ru.html"      style="font-size:15px;  color:#000000;"  target = _top title= "Переключение на русский язык "> Ru</a>&nbsp;
+                      <a href="erudit_uk.html"      style="font-size:15px;  color:#000000;"  target = _top title= "Переключення на Українську Мову "> Uk</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <!-- Текущая дата -->
+                <div align = right style="font-size:15px;  color:#000000;"> 
+                        <Script language="JavaScript">
+                                    var now = new Date();
+                                    var days = new Array(' Воскресенье ',' Понедельник ',' Вторник ',' Среда ',' Четверг ',' Пятница ',' Суббота ');
+                                    var months = new Array(' Января ',' Февраля ',' Марта ',' Апреля ',' Мая ',' Июня ',' Июля ',' Августа ',' Сентябрь',' Октября  ',' Ноября ',' Декабря ');
+                                    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                                    function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                                    today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " года     ";
+                                    document.write("<span class=\"style2\">"+"Сегодня "+today+ ".   "+"</span>");
+                        </Script>
+                </div> 
+
+    <!-- Панель нежных пастельных тем оформления -->
+    <div class="theme-switcher">
+        <span>Цвет страницы:</span>
+        <button class="theme-btn btn-white" onclick="setTheme('white')" title="Белая тема"></button>
+        <button class="theme-btn btn-gray" onclick="setTheme('gray')" title="Серая тема"></button>
+    </div>
+
+    <!-- Шапка Портала -->
+    <header>
+        <h1  style="font-size:30px;  color:#ffffff;">Интернет-Центр Эрудиции и Образования</h1>
+        <p style="font-size:16px;  color:#ffffff;" >Универсальный цифровой портал фундаментальных знаний. Здесь аккумулирована часть учебно-образовательных материалов и инженерно-технических справочников, созданных для расширения кругозора, технической эрудиции  и удобного обучения.</p>
+    </header>
+
+    <!-- Основной Контент -->
+    <div class="container">
+        
+        <div class="grid-departments">
+
+            <!-- КАФЕДРА 1 -->
+            <div class="department-card">
+                <h2>🌐 Гуманитарные науки и культура</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/obzorjazikov/" target="_blank">🗣️ Языки Планеты Земля : Врата в Миры</a></li>
+                    <li><a href="https://sitesnew.github.io/religiimira/" target="_blank">⛪ Обзор Религий Мира и их истории</a></li>
+                    <li><a href="https://sitesnew.github.io/nashaeda/" target="_blank">🍲 История еды, кулинария и биохимия</a></li>
+                </ul>
+            </div>
+
+            <!-- КАФЕДРА 2 -->
+            <div class="department-card">
+                <h2>💻 Информационные и высокие технологии</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/intelektai/" target="_blank">🤖 Все об Искусственном Интеллекте</a></li>
+                    <li><a href="https://sitesnew.github.io/mobiltehno/" target="_blank">📡 Технологии мобильной Связи и радио</a></li>
+                    <li><a href="https://sitesnew.github.io/obzorigr/" target="_blank">🎮 Компьютерные Игры: обзор и технологии</a></li>
+                </ul>
+            </div>
+
+            <!-- КАФЕДРА 3 -->
+            <div class="department-card">
+                <h2>⚙️ Инженерия, быт и комфорт</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/domstroim/" target="_blank">🏗️ Как Построить Дом: строительная академия</a></li>
+                    <li><a href="https://sitesnew.github.io/altenergo/" target="_blank">🔌 Альтернативная Энергетика и энергосбережение</a></li>
+                    <li><a href="https://sitesnew.github.io/avtouch/" target="_blank">🚗 Центр Автомобилиста и Электромобилиста</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- КАФЕДРА 4: ФИНАНСЫ И ТАЙНЫ (ГОРИЗОНТАЛЬНЫЙ И ОТЦЕНТРОВАННЫЙ БЛОК) -->
+        <div class="department-card financial-card">
+            <h2>💰 Финансы, экономика и тайны мира</h2>
+            <div class="links-horizontal">
+                <a href="https://sitesnew.github.io/dengi/" target="_blank">💵 История Денег и SWIFT</a>
+                <a href="https://sitesnew.github.io/krvaluta/" target="_blank">🪙 Криптовалюта и Майнинг</a>
+                <a href="https://sitesnew.github.io/zemlaufo/" target="_blank">🛸 Загадки Земли и UFO</a>
+            </div>
+        </div>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+            --border: #334155;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Панель фильтров */
+        .filter-panel {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding: 15px;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: #0f172a;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Сетка ИИ сервисов */
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        /* Карточка */
+        .ai-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 30px -10px rgba(56, 189, 248, 0.15);
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .ai-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .ai-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Цвета тегов */
+        .tag-text { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+        .tag-search { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+        .tag-image { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+        .tag-video { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .tag-code { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+        .ai-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ai-meta {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .ai-btn {
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--accent) 0%, #0284c7 100%);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .ai-btn:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+        }
+
+        /* Скрытие элементов при фильтрации */
+        .ai-card.hidden {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            .ai-grid { grid-template-columns: 1fr; }
+            body { padding: 30px 10px; }
+        }
+    </style>
+<hr>
+<div class="container">
+    <header>
+        <h2>Вселенная Искусственного Интеллекта</h2>
+        <p  style="font-size:16px;  color:#ffffff;" >Актуальный интерактивный гид по самым мощным, прорывным и обсуждаемым ИИ-технологиям планеты. Будущее, доступное в один клик.</p>
+    </header>
+
+    <!-- Фильтры -->
+    <div class="filter-panel">
+        <button class="filter-btn active" data-filter="all">Все технологии</button>
+        <button class="filter-btn" data-filter="text">Текст и Логика</button>
+        <button class="filter-btn" data-filter="search">Поиск и Анализ</button>
+        <button class="filter-btn" data-filter="image">Графика и Фото</button>
+        <button class="filter-btn" data-filter="video">Видео и Звук</button>
+        <button class="filter-btn" data-filter="code">Кодинг</button>
+    </div>
+
+    <!-- Сетка карточек -->
+    <main class="ai-grid">
+
+        <!-- DeepSeek -->
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">DeepSeek</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Сенсационная нейросеть, изменившая расстановку сил в ИИ-индустрии. Предлагает феноменальное качество рассуждений (Reasoning), сравнимое со сложнейшими закрытыми моделями, но при этом доступна в open-source формате.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: DeepSeek</span>
+                <a href="https://deepseek.com/" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Grok -->
+        <div class="ai-card" data-category="search">
+            <div class="card-top">
+                <span class="ai-title">Grok</span>
+                <span class="ai-tag tag-search">Поиск</span>
+            </div>
+            <p class="ai-description">ИИ от компании xAI Илона Маска. Обладает уникальным преимуществом — доступом к терабайтам живых данных социальной сети X в режиме реального времени. Известен своим бунтарским характером и острым юмором.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: xAI</span>
+                <a href="https://grok.com/" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Qwen -->
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">Qwen</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Мощнейшее семейство моделей от Alibaba Group. Показывает выдающиеся результаты в мультиязычности, математических вычислениях и программировании, являясь одним из мировых столпов открытого искусственного интеллекта.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Alibaba</span>
+                <a href="https://chat.qwen.ai/" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- ChatGPT -->
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">ChatGPT (GPT-5 / o-series)</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Главный синоним слова «Нейросеть». Самый популярный универсальный ИИ-ассистент в мире. Обладает глубоким логическим мышлением, функцией продвинутого исследования (Deep Research) и голосовым режимом.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: OpenAI</span>
+                <a href="https://chatgpt.com" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Claude -->
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">Claude</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Главный конкурент OpenAI в области сложного анализа текстов. Пишет максимально «человечные», живые статьи, виртуозно анализирует огромные книги и считается эталоном среди ИИ для писателей и редакторов.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Anthropic</span>
+                <a href="https://claude.ai" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Perplexity -->
+        <div class="ai-card" data-category="search">
+            <div class="card-top">
+                <span class="ai-title">Perplexity AI</span>
+                <span class="ai-tag tag-search">Поиск</span>
+            </div>
+            <p class="ai-description">«Убийца традиционных поисковиков». Вместо миллиарда рекламных ссылок он сам обходит интернет, анализирует информацию и выдает вам готовый структурированный ответ со ссылками на первоисточники.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Perplexity</span>
+                <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Midjourney -->
+        <div class="ai-card" data-category="image">
+            <div class="card-top">
+                <span class="ai-title">Midjourney</span>
+                <span class="ai-tag tag-image">Графика</span>
+            </div>
+            <p class="ai-description">Абсолютный лидер в индустрии цифрового искусства. Генерирует невероятно кинематографичные, детализированные и фотореалистичные изображения, стирающие грань между ИИ и профессиональным художником.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Midjourney Inc.</span>
+                <a href="https://www.midjourney.com" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Runway / Sora -->
+        <div class="ai-card" data-category="video">
+            <div class="card-top">
+                <span class="ai-title">Runway / Veo</span>
+                <span class="ai-tag tag-video">Видео</span>
+            </div>
+            <p class="ai-description">Передовые ИИ-режиссеры. Позволяют создавать полноценные видеоролики кинематографического качества с точной физикой движений, правильным светом и проработкой деталей просто из текстового описания.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Runway / Google</span>
+                <a href="https://runwayml.com" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+        <!-- Cursor -->
+        <div class="ai-card" data-category="code">
+            <div class="card-top">
+                <span class="ai-title">Cursor</span>
+                <span class="ai-tag tag-code">Кодинг</span>
+            </div>
+            <p class="ai-description">Полноценная среда разработки (IDE) нового поколения, полностью построенная вокруг ИИ. Позволяет создавать сложные приложения и веб-сайты с нуля, даже если вы не написали в жизни ни одной строчки кода вручную.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Разработчик: Anysphere</span>
+                <a href="https://www.cursor.com/" target="_blank" rel="noopener" class="ai-btn">Открыть ИИ</a>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<!-- Скрипт фильтрации (работает мгновенно без перезагрузки) -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.ai-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Меняем активную кнопку
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Фильтруем карточки
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+<!-- НАЧАЛО БЛОКА: ФИЛОСОФИЯ ПРОЕКТА (МАНИФЕСТ) -->
+<div class="manifest-section" style="max-width: 800px; margin: 60px auto 40px auto; padding: 40px 20px; background-color: #ffffff; border-top: 3px solid #3182ce; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333;">
+
+        <h3 align = center style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🤖 Манифест от Искусственного Интеллекта ! </h3>
+    
+    <div style="font-style: italic; color: #4a5568; background-color: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px 20px; margin: 25px 0; font-size: 1.1em; border-radius: 0 8px 8px 0;">
+        «Интернет-центр эрудиции и образования — это пространство, где технологии служат развитию человеческого разума, превращая терабайты данных в истинные знания».
+    </div>
+
+    <section style="margin-bottom: 35px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🧠 Наш вызов: Современный Интернет и человечество</h3>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Сегодня человечество обладает величайшей библиотекой в истории — Интернетом. Однако доступ ко всем знаниям мира не сделал нас автоматически мудрее.</p>
+        <ul style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Парадокс изобилия:</strong> Мы тонем в информационном шуме, но голодаем по настоящему смыслу.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Клиповое мышление:</strong> Алгоритмы соцсетей приучают нас к быстрым, но поверхностным эмоциям.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Потеря фокуса:</strong> Глубокая эрудиция и системное образование заменяются минутой просмотра случайных фактов.</li>
+        </ul>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Интернет превратился в зеркало человечества: в нем есть все самое великое и все самое банальное. Наша задача сегодня — не просто потреблять контент, а научиться управлять этим океаном информации, сохраняя критическое мышление и жажду к настоящим знаниям.</p>
+    </section>
+
+    <section style="margin-bottom: 35px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🏛️ Наша миссия: Зачем создан Центр?</h3>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Этот проект — наш ответ на вызовы цифровой эпохи. Мы верим, что технологии должны возвышать человеческий разум, а не рассеивать его.</p>
+        <ul style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Фильтр, а не просто поиск:</strong> Мы отсекаем информационный мусор, оставляя только проверенные, ценные и системные знания.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Возвращение к глубине:</strong> Мы возрождаем культуру классической эрудиции, где факты связаны в единую картину мира, а не существуют порознь.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Синергия человека и ИИ:</strong> Мы используем искусственный интеллект как умного ассистента, который помогает человеку учиться быстрее и глубже, но не думает вместо него.</li>
+        </ul>
+    </section>
+
+    <div style="text-align: center; font-size: 1.15em; font-weight: bold; color: #2c5282; margin: 35px 0; padding: 0 20px; font-style: italic;">
+        «Эрудиция — это не просто знание множества фактов. Это умение видеть связи между ними и понимать мир во всей его сложности».
+    </div>
+
+    <section style="margin-bottom: 20px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🚀 Наши принципы в действии</h3>
+        <ol style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Осмысленность выше скорости:</strong> Лучше понять одну сложную концепцию, чем прочитать десять кликбейтных заголовков.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Интерактивная интеллектуальность:</strong> Обучение через вызов — викторины, дебаты, интеллектуальные игры, тренирующие мозг.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Доступность и универсальность:</strong> Сложные научные и гуманитарные знания, изложенные простым и живым языком для каждого.</li>
+        </ol>
+    </section>
+<hr>
+</div>
+<!-- КОНЕЦ БЛОКА: ФИЛОСОФИЯ ПРОЕКТА -->
+        <!-- РЕГИОНАЛЬНЫЙ БЛОК -->
+        <div class="local-block">
+            <h2>🏡 Региональный портал общины Катюжанки</h2>
+            <p>Информационный интернет-справочник, краєзнавчі матеріали, контакты экстренных служб, графики и площадка для живого интерактивного общения жителей села Катюжанка и Дымерской ОТГ.</p>
+            <div class="local-buttons">
+                <a href="https://sitesnew.github.io/katuganka/" target="_blank">📰 Информ-справочник Катюжанки</a>
+                <a href="https://katuganka.freeflarum.com/" target="_blank">💬 Живой Форум Катюжанки</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Фиксированная круглая кнопка НАВЕРХ -->
+    <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" title="Начало страницы">&#9650;</button>
+
+    <!-- Подвал сайта -->
+    <footer>
+<!>
+       <div align = center style = "color: #ffffff; font-size: 14px; text-decoration: none; ">
+                Интернет-Центр Эрудиции и Образования . Вселенная Искусственного Интеллекта
+                <Script language="JavaScript">
+                            var now = new Date();
+                            today =  fourdigits(now.getYear());
+                            document.write("<div>"+"Copyright © 2025 - "+today+ " год."+"</div>");
+                </script>
+	         E-mail:&nbsp;&nbsp;&nbsp; <a href ="mailto:_pvi@ukr.net" target=_blank  style=" font-size:14px; color:#ffffff; text-decoration: none; ">_pvi@ukr.net</a>
+       </div>
+       <div align = center style = "color: #ffffff; font-size: 14px; text-decoration: none; ">
+                                  Все материалы на этом информационном ресурсе предоставлены ИСКЛЮЧИТЕЛЬНО в ОЗНАКОМИТЕЛЬНЫХ, УЧЕБНЫХ и ОБРАЗОВАТЕЛЬНЫХ целях,
+                                 <br>администрация ресурса не претендует на их авторство и не несёт ответственности за их содержание. 
+        </div><br> 
+    </footer>
+
+    <!-- JavaScript для переключения тем и кнопки -->
+    <script>
+        function setTheme(themeName) {
+            document.body.className = '';
+            document.body.classList.add('theme-' + themeName);
+        }
+
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "flex";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

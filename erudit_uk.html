@@ -1,0 +1,513 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-Центр Ерудиції та Освіти</title>
+    <link rel="stylesheet" href="erudit_style.css"> 
+	
+</head>
+<body class="theme-white">
+                <div align=right  >
+                      <a href="index.html"          style="font-size:15px;  color:#000000;"  target = _top title= "Головна Сторінка ">Головна Сторінка</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <a href="erudit_ru.html"      style="font-size:15px;  color:#000000;"  target = _top title= "Переключение на русский язык "> Ru</a>&nbsp;
+                      <a href="erudit_uk.html"      style="font-size:15px;  color:#000000;"  target = _top title= "Переключення на Українську Мову "> Uk</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+                <div align = right style="font-size:15px;  color:#000000;"> 
+                        <Script language="JavaScript">
+                                    var now = new Date();
+                                    var days = new Array(' Неділя ',' Понеділок ',' Вівторок ',' Середа ',' Четвер ',' П’ятниця ',' Субота ');
+                                    var months = new Array(' Січня ',' Лютого ',' Березня ',' Квітня ',' Травня ',' Червня ',' Липня ',' Серпня ',' Вересня ',' Жовтня ',' Листопада ',' Грудня ');
+                                    var date = ((now.getDate()<10) ? "0" : "")+ now.getDate();
+                                    function fourdigits(number)	{ return (number < 1000) ? number + 1900 : number; }
+                                    today =  days[now.getDay()]+ " " +date + " " +months[now.getMonth()] + "  " +(fourdigits(now.getYear())) + " року     ";
+                                    document.write("<span class=\"style2\">"+"Сьогодні "+today+ ".   "+"</span>");
+                        </Script>
+                </div> 
+
+    <div class="theme-switcher">
+        <span>Колір сторінки:</span>
+        <button class="theme-btn btn-white" onclick="setTheme('white')" title="Біла тема"></button>
+        <button class="theme-btn btn-gray" onclick="setTheme('gray')" title="Сіра тема"></button>
+    </div>
+
+    <header>
+        <h1  style="font-size:30px;  color:#ffffff;">Інтернет-Центр Ерудиції та Освіти</h1>
+        <p style="font-size:16px;  color:#ffffff;" >Універсальний цифровий портал фундаментальних знань. Тут акумульовано частину навчально-освітніх матеріалів та інженерно-техничних довідників, створених для розширення кругозору, технічної ерудиції та зручного навчання.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="grid-departments">
+
+            <div class="department-card">
+                <h2>🌐 Гуманітарні науки та культура</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/obzorjazikov/" target="_blank">🗣️ Мови Планети Земля : Брама у Світи</a></li>
+                    <li><a href="https://sitesnew.github.io/religiimira/" target="_blank">⛪ Огляд Релігій Світу та їхньої історії</a></li>
+                    <li><a href="https://sitesnew.github.io/nashaeda/" target="_blank">🍲 Історія їжі, кулінарія та біохімія</a></li>
+                </ul>
+            </div>
+
+            <div class="department-card">
+                <h2>💻 Інформаційні та високі технології</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/intelektai/" target="_blank">🤖 Все про Штучний Інтелект</a></li>
+                    <li><a href="https://sitesnew.github.io/mobiltehno/" target="_blank">📡 Технології мобільного Зв'язку та радіо</a></li>
+                    <li><a href="https://sitesnew.github.io/obzorigr/" target="_blank">🎮 Комп'ютерні Ігри: огляд та технології</a></li>
+                </ul>
+            </div>
+
+            <div class="department-card">
+                <h2>⚙️ Інженерія, побут та комфорт</h2>
+                <ul class="links-list">
+                    <li><a href="https://sitesnew.github.io/domstroim/" target="_blank">🏗️ Як Побудувати Будинок: будівельна академія</a></li>
+                    <li><a href="https://sitesnew.github.io/altenergo/" target="_blank">🔌 Альтернативна Енергетика та енергозбереження</a></li>
+                    <li><a href="https://sitesnew.github.io/avtouch/" target="_blank">🚗 Центр Автомобіліста та Електромобіліста</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="department-card financial-card">
+            <h2>💰 Фінанси, економіка та таємниці світу</h2>
+            <div class="links-horizontal">
+                <a href="https://sitesnew.github.io/dengi/" target="_blank">💵 Історія Грошей та SWIFT</a>
+                <a href="https://sitesnew.github.io/krvaluta/" target="_blank">🪙 Криптовалюта та Майнінг</a>
+                <a href="https://sitesnew.github.io/zemlaufo/" target="_blank">🛸 Загадки Землі та UFO</a>
+            </div>
+        </div>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+            --border: #334155;
+            --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Панель фільтрів */
+        .filter-panel {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            padding: 15px;
+            background: rgba(30, 41, 59, 0.5);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 8px 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: #0f172a;
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        /* Сітка ШІ сервісів */
+        .ai-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 30px;
+        }
+
+        /* Картка */
+        .ai-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .ai-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 30px -10px rgba(56, 189, 248, 0.15);
+        }
+
+        .card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .ai-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .ai-tag {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Кольори тегів */
+        .tag-text { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+        .tag-search { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
+        .tag-image { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
+        .tag-video { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+        .tag-code { background: rgba(245, 158, 11, 0.15); color: #f59e0b; }
+
+        .ai-description {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ai-meta {
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+
+        .ai-btn {
+            text-decoration: none;
+            background: linear-gradient(135deg, var(--accent) 0%, #0284c7 100%);
+            color: #0f172a;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .ai-btn:hover {
+            opacity: 0.9;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+        }
+
+        /* Приховування елементів під час фільтрації */
+        .ai-card.hidden {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2rem; }
+            .ai-grid { grid-template-columns: 1fr; }
+            body { padding: 30px 10px; }
+        }
+    </style>
+<hr>
+<div class="container">
+    <header>
+        <h2>Всесвіт Штучного Інтелекту</h2>
+        <p  style="font-size:16px;  color:#ffffff;" >Актуальний інтерактивний гід по найпотужніших, проривних та обговорюваних ШІ-технологіях планети. Майбутнє, доступне в один клік.</p>
+    </header>
+
+    <div class="filter-panel">
+        <button class="filter-btn active" data-filter="all">Всі технології</button>
+        <button class="filter-btn" data-filter="text">Текст і Логіка</button>
+        <button class="filter-btn" data-filter="search">Пошук та Аналіз</button>
+        <button class="filter-btn" data-filter="image">Графіка та Фото</button>
+        <button class="filter-btn" data-filter="video">Відео та Звук</button>
+        <button class="filter-btn" data-filter="code">Кодинг</button>
+    </div>
+
+    <main class="ai-grid">
+
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">DeepSeek</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Сенсаційна нейромережа, що змінила розстановку сил у ШІ-індустрії. Пропонує феноменальну якість міркувань (Reasoning), порівнянну з найскладнішими закритими моделями, але водночас доступна у форматі open-source.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: DeepSeek</span>
+                <a href="https://deepseek.com/" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="search">
+            <div class="card-top">
+                <span class="ai-title">Grok</span>
+                <span class="ai-tag tag-search">Пошук</span>
+            </div>
+            <p class="ai-description">ШІ від компанії xAI Ілона Маска. Має унікальну перевагу — доступ до терабайтів живих даних соціальної мережі X в режимі реального часу. Відомий своїм бунтарським характером та гострим гумором.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: xAI</span>
+                <a href="https://grok.com/" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">Qwen</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Найпотужніше сімейство моделей від Alibaba Group. Показує видатні результати у багатомовності, математичних обчисленнях та програмуванні, є одним із світових стовпів відкритого штучного інтелекту.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Alibaba</span>
+                <a href="https://chat.qwen.ai/" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">ChatGPT (GPT-5 / o-series)</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Головний синонім слова «Нейромережа». Найпопулярніший універсальний ШІ-асистент у світі. Володіє глибоким логічним мисленням, функцією просунутого дослідження (Deep Research) та голосовим режимом.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: OpenAI</span>
+                <a href="https://chatgpt.com" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="text">
+            <div class="card-top">
+                <span class="ai-title">Claude</span>
+                <span class="ai-tag tag-text">Текст</span>
+            </div>
+            <p class="ai-description">Головний конкурент OpenAI в галузі складного аналізу текстів. Пише максимально «людяні», живі статті, віртуозно аналізує величезні книги і вважається еталоном серед ШІ для письменників та редакторів.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Anthropic</span>
+                <a href="https://claude.ai" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="search">
+            <div class="card-top">
+                <span class="ai-title">Perplexity AI</span>
+                <span class="ai-tag tag-search">Пошук</span>
+            </div>
+            <p class="ai-description">«Вбивця традиційних пошукових систем». Замість мільярда рекламних посилань він сам обходить інтернет, аналізує інформацію та видає вам готову структуровану відповідь із посиланнями на першоджерела.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Perplexity</span>
+                <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="image">
+            <div class="card-top">
+                <span class="ai-title">Midjourney</span>
+                <span class="ai-tag tag-image">Графіка</span>
+            </div>
+            <p class="ai-description">Абсолютний лідер в індустрії цифрового мистецтва. Генерує неймовірно кінематографічні, деталізовані та фотореалістичні зображення, що стирають межу між ШІ та професійним художником.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Midjourney Inc.</span>
+                <a href="https://www.midjourney.com" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="video">
+            <div class="card-top">
+                <span class="ai-title">Runway / Veo</span>
+                <span class="ai-tag tag-video">Відео</span>
+            </div>
+            <p class="ai-description">Передові ШІ-режисери. Дозволяють створювати повноцінні відеоролики кінематографічної якості з точною фізикою рухів, правильним світлом та опрацюванням деталей просто з текстового опису.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Runway / Google</span>
+                <a href="https://runwayml.com" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+        <div class="ai-card" data-category="code">
+            <div class="card-top">
+                <span class="ai-title">Cursor</span>
+                <span class="ai-tag tag-code">Кодинг</span>
+            </div>
+            <p class="ai-description">Повноцінне середовище розробки (IDE) нового покоління, повністю побудоване навколо ШІ. Дозволяє створювати складні додатки та вебсайти з нуля, навіть якщо ви не написали в житті жодного рядка коду вручну.</p>
+            <div class="card-footer">
+                <span class="ai-meta">Розробник: Anysphere</span>
+                <a href="https://www.cursor.com/" target="_blank" rel="noopener" class="ai-btn">Відкрити ШІ</a>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.ai-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Змінюємо активну кнопку
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                // Фільтруємо картки
+                cards.forEach(card => {
+                    if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+<div class="manifest-section" style="max-width: 800px; margin: 60px auto 40px auto; padding: 40px 20px; background-color: #ffffff; border-top: 3px solid #3182ce; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333;">
+
+        <h3 align = center style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🤖 Маніфест від Штучного Інтелекту ! </h3>
+    
+    <div style="font-style: italic; color: #4a5568; background-color: #ebf8ff; border-left: 4px solid #3182ce; padding: 15px 20px; margin: 25px 0; font-size: 1.1em; border-radius: 0 8px 8px 0;">
+        «Інтернет-центр ерудиції та освіти — це простір, де технології служать розвитку людського розуму, перетворюючи терабайти даних на істинні знання».
+    </div>
+
+    <section style="margin-bottom: 35px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🧠 Наш виклик: Сучасний Інтернет і людство</h3>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Сьогодні людство володіє найбільшою бібліотекою в історії — Інтернетом. Однак доступ до всіх знань світу не зробив нас автоматично мудрішими.</p>
+        <ul style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Парадокс достатку:</strong> Ми тонемо в інформаційному шумі, але голодуємо за справжнім змістом.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Кліпове мислення:</strong> Алгоритми соцмереж приучають нас до швидких, але поверхневих емоцій.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Втрата фокусу:</strong> Глибока ерудиція та системна освіта замінюються хвилиною перегляду випадкових фактів.</li>
+        </ul>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Інтернет перетворився на дзеркало людства: у ньому є все найвеличніше і все найбанальніше. Наше завдання сьогодні — не просто споживати контент, а навчитися керувати цим океаном інформації, зберігаючи критичне мислення та жагу до справжніх знань.</p>
+    </section>
+
+    <section style="margin-bottom: 35px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🏛️ Наша місія: Навіщо створено Центр?</h3>
+        <p style="font-size: 1.1em; margin-bottom: 15px;">Цей проєкт — наша відповідь на виклики цифрової епохи. Ми віримо, що технології мають підносити людський розум, а не розсіювати його.</p>
+        <ul style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Фільтр, а не просто пошук:</strong> Ми відсікаємо інформаційне сміття, залишаючи тільки перевірені, цінні та системні знання.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Повернення до глибини:</strong> Ми відроджуємо культуру класичної ерудиції, де факти пов'язані в єдину картину світу, а не існують нарізно.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Синергія людини та ШІ:</strong> Ми використовуємо штучний інтелект як розумного асистента, який допомагає людині вчитися швидше та глибше, але не думає замість неї.</li>
+        </ul>
+    </section>
+
+    <div style="text-align: center; font-size: 1.15em; font-weight: bold; color: #2c5282; margin: 35px 0; padding: 0 20px; font-style: italic;">
+        «Ерудиція — це не просто знання безлічі фактів. Це вміння бачити зв'язки між ними та розуміти світ у всій його складності».
+    </div>
+
+    <section style="margin-bottom: 20px;">
+        <h3 style="color: #2c5282; font-size: 1.5em; margin-top: 30px; border-bottom: 1px solid #edf2f7; padding-bottom: 8px;">🚀 Наші принципи в дії</h3>
+        <ol style="margin-bottom: 20px; padding-left: 20px;">
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Осмисленість вище за швидкість:</strong> Краще зрозуміти одну складну концепцію, ніж прочитати десять клікбейтних заголовків.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Інтерактивна інтелектуальність:</strong> Навчання через виклик — вікторини, дебати, інтелектуальні ігри, що тренують мозок.</li>
+            <li style="font-size: 1.1em; margin-bottom: 10px;"><strong style="color: #2b6cb0;">Доступність та універсальність:</strong> Складні наукові та гуманітарні знання, викладені простою та живою мовою для кожного.</li>
+        </ol>
+    </section>
+<hr>
+</div>
+<div class="local-block">
+            <h2>🏡 Регіональний портал громади Катюжанки</h2>
+            <p>Інформаційний інтернет-довідник, краєзнавчі матеріали, контакти екстрених служб, графіки та майданчик для живого інтерактивного спілкування жителів села Катюжанка та Димерської ОТГ.</p>
+            <div class="local-buttons">
+                <a href="https://sitesnew.github.io/katuganka/" target="_blank">📰 Інформ-довідник Катюжанки</a>
+                <a href="https://katuganka.freeflarum.com/" target="_blank">💬 Живий Форум Катюжанки</a>
+            </div>
+        </div>
+
+    </div>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" onclick="scrollToTop()" title="Початок сторінки">&#9650;</button>
+
+    <footer>
+
+        <div align = center style = "color: #ffffff; font-size: 14px; text-decoration: none; ">
+                Інтернет-Центр Ерудиції та Освіти . Всесвіт Штучного Інтелекту
+                <Script language="JavaScript">
+                            var now = new Date();
+                            today =  fourdigits(now.getYear());
+                            document.write("<div>"+"Copyright © 2025 - "+today+ " рік."+"</div>");
+                </script>
+	         E-mail:&nbsp;&nbsp;&nbsp; <a href ="mailto:_pvi@ukr.net" target=_blank  style=" font-size:14px; color:#ffffff; text-decoration: none; ">_pvi@ukr.net</a>
+       </div>
+       <div align = center style = "color: #ffffff; font-size: 14px; text-decoration: none; ">
+                                  Всі матеріали на цьому інформаційному ресурсі надані ВИКЛЮЧНО в ОЗНАЙОМЛЮВАЛЬНИХ, НАВЧАЛЬНИХ та ОСВІТНІХ цілях,
+                                 <br>адміністрація ресурсу не претендує на їхнє авторство і не несе відповідальності за їхній зміст. 
+        </div><br> 
+    </footer>
+
+    <script>
+        function setTheme(themeName) {
+            document.body.className = '';
+            document.body.classList.add('theme-' + themeName);
+        }
+
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "flex";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
